@@ -31,7 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        javascript:void(document.body.style.background=prompt)
+        javascript:void(document.body.style.backgroundcolor="red")
 
 
     })();
