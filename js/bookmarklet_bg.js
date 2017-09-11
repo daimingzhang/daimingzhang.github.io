@@ -34,7 +34,6 @@ function initMyBookmarklet(){
        javascript:void(document.body.style.background=prompt('What color would you like the background to be?'));
 
 
-    })();
 
 }
 
