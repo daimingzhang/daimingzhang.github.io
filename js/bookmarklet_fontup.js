@@ -1,4 +1,4 @@
-console.log('Loaded font change bookmarklet!!!');
+console.log('Loaded font changing bookmarklet!!!');
 
 
 javascript:(function(){
