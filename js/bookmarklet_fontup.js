@@ -35,10 +35,10 @@ function initMyBookmarklet(){
         for(i=0;i<p.length;i++){
             if(p[i].style.fontsize){
                 var s=parseInt(p[i].style.fontsize.replace('px',''));
-}else
+            }else
                 var s=12;}s+=2;p[i].style.fontsize=s+'px'}
 
-
+        //YOUR CODE GOES HERE!
     })();
 
 }
