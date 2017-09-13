@@ -31,7 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        $(document).mousemov(function(){
+        $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
