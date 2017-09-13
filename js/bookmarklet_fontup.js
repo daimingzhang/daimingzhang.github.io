@@ -31,12 +31,12 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        var p=document.getElementsByTagName("*");
+        var p=document.getElementsByTagName('*');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontsize){
-                var s=parseInt(p[i].style.fontsize.replace("px",""));
-
-                var s=12;}s+=2;p[i].style.fontsize=s+"px"}
+                var s=parseInt(p[i].style.fontsize.replace('px',''));
+}else
+                var s=12;}s+=2;p[i].style.fontsize=s+'px'}
 
 
     })();
