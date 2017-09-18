@@ -1,37 +1,54 @@
 console.log('Loaded font changing bookmarklet!!!');
 
 
-javascript: (function() { 
-   functionR(w) { 
-      try { 
-         vard = w.document, 
-         j, 
-         i, 
-         t, 
-         T, 
-         N, 
-         b, 
-         r = 1, 
-         C; 
-         for (j = 0; t = ["object", "embed", "applet", "iframe"][j]; ++j) { 
-            T = d.getElementsByTagName(t); 
-            for (i = T.length - 1; 
-            (i + 1) && (N = T[i]); --i) if (j != 3 || !R((C = N.contentWindow) ? C : N.contentDocument.defaultView)) { 
-               b = d.createElement("div"); 
-               b.style.width = N.width; 
-               b.style.height = N.height; 
-               b.innerHTML = "<del>" + (j == 3 ? "third-party" + t : t) + "</del>"; 
-               N.parentNode.replaceChild(b, N); 
-            } 
-         } 
-      } catch (E) { 
-         r = 0 
-      } 
-      returnr 
-   } 
-   R(self); 
-   vari, 
-   x; 
-   for (i = 0; x = frames[i]; ++i) R(x) 
-})()
+javascript:(function(){
 
+
+var v ="2.2.4"; // version of jquery we want to use
+
+if (window.jQuery== undefined || window.jQuery.fn.jquery < v){
+
+    var done = false;
+    var script = document.createElement("script");
+    script.src="http://ajax.googleapis.com/ajax/libs/jquery/" + v + "/jquery.min.js"; // load version of jQuery we specify
+    script.onload = script.onreadystatechange = function(){
+
+        if (!done && (!this.readyState || this.readyState=="loaded" || this.readyState =="complete")){
+
+        done = true;
+        initMyBookmarklet(); //If jquery is loaded now run my script
+
+        }
+    };
+document.getElementsByTagName("head")[0].appendChild(script);
+
+
+}else{
+    initMyBookmarklet();
+}
+
+function initMyBookmarklet(){
+    (window.myBookmarklet = function (){
+
+        //YOUR CODE GOES HERE!
+        $('p').mouseup(function(){
+
+        var p=document.getElementsByTagName('p');
+        for(i=0;i<p.length;i++){
+            if(p[i].style.fontSize){
+                var s=parseInt(p[i].style.fontSize.replace("px",""));
+            } else {
+                var s=12;}s+=2;p[i].style.fontSize=s+"px"}
+
+            });
+
+      
+
+
+
+        //YOUR CODE GOES HERE!
+    })();
+
+}
+
+})();
