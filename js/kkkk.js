@@ -32,11 +32,11 @@ function initMyBookmarklet(){
 
         //YOUR CODE GOES HERE!
  $(document).ready(function(){
-    $("div").click(function(){
-        $("div").animate({height: "300px"});
+    $("p").click(function(){
+        $("p").animate({height: "300px"});
     });
-    $("div").click(function(){
-        $("div").animate({height: "100px"});
+    $("p").click(function(){
+        $("p").animate({height: "100px"});
     });
 });
 
