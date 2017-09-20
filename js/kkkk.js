@@ -31,11 +31,13 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-       $(document).ready(function(){
+        $(document).ready(function(){
     $("p").click(function(){
         $(this).hide();
     });
 });
+
+
         //YOUR CODE GOES HERE!
     })();
 
