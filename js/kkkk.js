@@ -39,6 +39,20 @@ function initMyBookmarklet(){
         $("p").animate({height: "100px"});
     });
 });
+ function myMove() {
+  var elem = document.getElementById("p");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+    }
+  }
+}
 
 
 
