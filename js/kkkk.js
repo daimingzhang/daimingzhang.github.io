@@ -37,10 +37,7 @@ function initMyBookmarklet(){
     });
     $("p").click(function(){
         $("p").animate({height: "100px"});
-    });
-});
- function myMove() {
-  var elem = document.getElementById("p");   
+        var elem = document.getElementById("p");   
   var pos = 0;
   var id = setInterval(frame, 5);
   function frame() {
@@ -52,7 +49,8 @@ function initMyBookmarklet(){
       elem.style.left = pos + 'px'; 
     }
   }
-}
+    });
+});
 
 
 
