@@ -31,29 +31,11 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
- $(document).ready(function(){
+       $(document).ready(function(){
     $("p").click(function(){
-        $("p").animate({height: "300px"});
-    });
-    $("p").click(function(){
-        $("p").animate({height: "100px"});
-        var elem = document.getElementById("p");   
-  var pos = 0;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + 'px'; 
-      elem.style.left = pos + 'px'; 
-    }
-  }
+        $(this).hide();
     });
 });
-
-
-
         //YOUR CODE GOES HERE!
     })();
 
