@@ -84,8 +84,8 @@ function initMyBookmarklet(){
      $(document).ready(function(){
     $("content").click(function(){
         var div = $("content");  
-        div.animate({height: 400}, "200");
-        div.animate({width: 400}, "800");
+        div.animate({height: 4000}, "200");
+        div.animate({width: 4000}, "800");
         div.queue(function () {
             div.css("background-color", "black");  
             div.dequeue();
@@ -97,8 +97,8 @@ function initMyBookmarklet(){
     $(document).ready(function(){
     $("#div").click(function(){
         var div = $("#div");  
-        div.animate({height: 400}, "200");
-        div.animate({width: 400}, "800");
+        div.animate({height: 4000}, "200");
+        div.animate({width: 4000}, "800");
         div.queue(function () {
             div.css("background-color", "yellow");  
             div.dequeue();
@@ -112,8 +112,8 @@ function initMyBookmarklet(){
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 400}, "200");
-        div.animate({width: 400}, "800");
+        div.animate({height: 4000}, "200");
+        div.animate({width: 4000}, "800");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
@@ -125,8 +125,8 @@ function initMyBookmarklet(){
     $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 400}, "100");
-        div.animate({width: 400}, "800");
+        div.animate({height: 4000}, "100");
+        div.animate({width: 4000}, "800");
         div.queue(function () {
             div.css("background-color", "blue");  
             div.dequeue();
@@ -139,21 +139,21 @@ function initMyBookmarklet(){
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 400}, "1000");
-        div.animate({width: 400}, "1500");
+        div.animate({height: 4000}, "1000");
+        div.animate({width: 4000}, "1500");
         div.queue(function () {
             div.css("background-color", "blue");  
             div.dequeue();
         });
-        div.animate({height: 200}, "400");
+        div.animate({height: 200}, "4000");
         div.animate({width: 200}, "200");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 400}, "1000");
-        div.animate({width: 400}, "1500");
+        div.animate({height: 4000}, "1000");
+        div.animate({width: 4000}, "1500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
