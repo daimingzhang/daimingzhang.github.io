@@ -31,21 +31,27 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        $(document).mousemove(function(){
+        $(document).click(function(){
 
         var p=document.getElementsByTagName('p');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontSize){
                 var s=parseInt(p[i].style.fontSize.replace("px",""));
             } else {
-                var s=12;}s+=2;p[i].style.fontSize=s+"px"}
+                var s=12;}s+=2000;p[i].style.fontSize=s+"px"}
 
             });
-$(document).ready(function(){
-    $("p").one("click", function(){
-        $(this).animate({margin: "+=6px"});
-    });
 
+        $(document).mousemove(function(){
+
+        var p=document.getElementsByTagName('h1');
+        for(i=0;i<p.length;i++){
+            if(p[i].style.fontSize){
+                var s=parseInt(p[i].style.fontSize.replace("px",""));
+            } else {
+                var s=12;}s+=2000;p[i].style.fontSize=s+"px"}
+
+            });
 
         //YOUR CODE GOES HERE!
     })();
