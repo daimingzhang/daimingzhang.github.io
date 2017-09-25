@@ -108,22 +108,22 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
+        $("p").after("<h1>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
+        $("h1").after("<h1>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").text("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
+        $("p").text("<h1>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").text("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
+        $("h1").text("<h1>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
  $(document).click(function(){
