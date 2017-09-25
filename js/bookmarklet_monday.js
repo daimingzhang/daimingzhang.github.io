@@ -127,7 +127,7 @@ function initMyBookmarklet(){
     });
 });
  $(document).click(function(){
-    $("*").text("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
+    $("*").text("<WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
 });
         //YOUR CODE GOES HERE!
     })();
