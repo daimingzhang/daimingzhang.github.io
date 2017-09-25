@@ -43,7 +43,7 @@ function initMyBookmarklet(){
             });
 $(document).ready(function(){
     $("p").one("click", function(){
-        $(this).animate({letter-spacing: "+=6px"});
+        $(this).animate({margin: "+=6px"});
     });
 
 
