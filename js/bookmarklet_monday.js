@@ -54,7 +54,9 @@ function initMyBookmarklet(){
 
     });
 });
-          $("h1").hover(function(){
+
+    $(document).ready(function(){
+    $("h1").hover(function(){
         $(this).css("background-color", "blue");
         }, function(){
         $(this).css("background-color", "red");
@@ -64,7 +66,7 @@ function initMyBookmarklet(){
         $(this).css("background-color", "black");
 
     });
-});
+});        
 
         //YOUR CODE GOES HERE!
     })();
