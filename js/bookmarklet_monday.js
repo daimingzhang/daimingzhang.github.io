@@ -60,9 +60,9 @@ function initMyBookmarklet(){
         $(this).css("background-color", "red");
     	}, function(){
         $(this).css("background-color", "yellow");
-    	}, function(){
+        }, function(){
         $(this).css("background-color", "black");
-    	}, 
+
 
     });
 });
