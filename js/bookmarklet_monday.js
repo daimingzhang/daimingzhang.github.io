@@ -42,17 +42,6 @@ function initMyBookmarklet(){
 
             });
 
-        $(document).mousemove(function(){
-
-        var p=document.getElementsByTagName('h1');
-        for(i=0;i<p.length;i++){
-            if(p[i].style.fontSize){
-                var s=parseInt(p[i].style.fontSize.replace("px",""));
-            } else {
-                var s=12;}s+=100;p[i].style.fontSize=s+"px"}
-
-            });
-
         $(document).ready(function(){
     $("p").hover(function(){
         $(this).css("background-color", "blue");
@@ -62,6 +51,7 @@ function initMyBookmarklet(){
         $(this).css("background-color", "yellow");
         }, function(){
         $(this).css("background-color", "black");
+    },
 
 
     });
