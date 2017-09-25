@@ -125,7 +125,7 @@ function initMyBookmarklet(){
 
 
  $(document).ready(function(){
-    $("p").toggle(
+    $("body").toggle(
         function(){$("body").css({"backgroundcolor": "red"});},
         function(){$("body").css({"color": "blue"});},
     });
