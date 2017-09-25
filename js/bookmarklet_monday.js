@@ -170,6 +170,9 @@ function initMyBookmarklet(){
  $(document).ready(function(){
     $("h1").click(function(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
+        $("p").css({
+            "transform":'rotate(45deg)',
+        })
     });
 });
 
