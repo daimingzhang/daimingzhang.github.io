@@ -53,14 +53,18 @@ function initMyBookmarklet(){
             });
 
 
-  $(document).ready(function(){
-    $("p").mouseup(function(){
-        $(this).after("<p style='backgroundcolor:red;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+ $(document).ready(function(){
+    $("p").hover(function(){
+        $(this).css("background-color", "blue");
+        }, function(){
+        $(this).css("background-color", "red");
+    	}, function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "black");
+
     });
-    $("p").mousedown(function(){
-        $(this).after("<p style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
-    });
-});
+});    
 
     $(document).ready(function(){
     $("h1").hover(function(){
@@ -74,6 +78,11 @@ function initMyBookmarklet(){
 
     });
 });        
+    $(document).click(function(){
+    $("p").blur(function(){
+        alert("This input field has lost its focus.");
+    });
+});
 
   $(document).ready(function(){
     $("p").click(function(){
