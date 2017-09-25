@@ -121,6 +121,15 @@ function initMyBookmarklet(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
+
+
+
+ $(document).ready(function(){
+    $("p").toggle(
+        function(){$("body").css({"backgroundcolor": "red"});},
+        function(){$("body").css({"color": "blue"});},
+    });
+});
  $(document).ready(function(){
     $("input").keydown(function(){
         $("input").css("background-color", "blue");
