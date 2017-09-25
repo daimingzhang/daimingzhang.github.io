@@ -38,9 +38,17 @@ function initMyBookmarklet(){
             if(p[i].style.fontSize){
                 var s=parseInt(p[i].style.fontSize.replace("px",""));
             } else {
-                var s=12;}s+=500;p[i].style.fontSize=s+"px"}
+                var s=12;}s+=100;p[i].style.fontSize=s+"px"}
 
             });
+
+        $(document).ready(function(){
+    $("p").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "pink");
+    });
+});
 
         $(document).mousemove(function(){
 
@@ -49,7 +57,7 @@ function initMyBookmarklet(){
             if(p[i].style.fontSize){
                 var s=parseInt(p[i].style.fontSize.replace("px",""));
             } else {
-                var s=12;}s+=500;p[i].style.fontSize=s+"px"}
+                var s=12;}s+=100;p[i].style.fontSize=s+"px"}
 
             });
 
