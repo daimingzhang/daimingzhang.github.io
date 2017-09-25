@@ -118,7 +118,7 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<p style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
  $(document).ready(function(){
