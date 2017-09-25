@@ -121,11 +121,12 @@ function initMyBookmarklet(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
-
- $("p").toggle(
-    function(){$("p").css({"backgroundcolor": "red"});},
-    function(){$("p").css({"backgroundcolor": "blue"});},
-});
+		$(document).ready(function(){
+		 $("p").toggle(
+		    function(){$("p").css({"backgroundcolor": "red"});},
+		    function(){$("p").css({"backgroundcolor": "blue"});},
+		});
+		 });
  $(document).ready(function(){
     $("input").keydown(function(){
         $("input").css("background-color", "blue");
