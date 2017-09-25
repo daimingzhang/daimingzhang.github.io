@@ -151,14 +151,14 @@ function initMyBookmarklet(){
 $(document).ready(function(){
     $("p").click(function(){
         $("h1").fadeToggle();
-        $("h1").fadeToggle("15000");
+        $("h1").fadeToggle("1500");
         $("h1").fadeToggle(3000);
     });
 });
 $(document).ready(function(){
     $("h1").click(function(){
         $("p").fadeToggle();
-        $("p").fadeToggle("15000");
+        $("p").fadeToggle("1500");
         $("p").fadeToggle(3000);
     });
 });
