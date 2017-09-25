@@ -60,10 +60,6 @@ function initMyBookmarklet(){
         $(this).css("background-color", "blue");
         }, function(){
         $(this).css("background-color", "red");
-    	}, function(){
-        $(this).css("background-color", "yellow");
-        }, function(){
-        $(this).css("background-color", "black");
 
     });
 });    
@@ -73,10 +69,6 @@ function initMyBookmarklet(){
         $(this).css("background-color", "blue");
         }, function(){
         $(this).css("background-color", "red");
-    	}, function(){
-        $(this).css("background-color", "yellow");
-        }, function(){
-        $(this).css("background-color", "black");
 
     });
 }); 
@@ -179,7 +171,7 @@ function initMyBookmarklet(){
     });
 });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $("p").click(function(){
         $("h1").fadeToggle();
         $("h1").fadeToggle("1100");
@@ -196,7 +188,7 @@ $(document).ready(function(){
 
 
 
-//////////
+*//////////
 
 
 
