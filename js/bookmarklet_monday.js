@@ -80,7 +80,7 @@ function initMyBookmarklet(){
 });        
     $(document).click(function(){
     $("p").blur(function(){
-        alert("This input field has lost its focus.");
+        alert("This p field has lost its focus.");
     });
 });
 
@@ -113,12 +113,20 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+        $("p").after("<p style='backgroundcolor:red;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+        $("h1").after("<p style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+    });
+});
+ $(document).ready(function(){
+    $("input").keydown(function(){
+        $("input").css("background-color", "blue");
+    });
+    $("input").keyup(function(){
+        $("input").css("background-color", "red");
     });
 });
         //YOUR CODE GOES HERE!
