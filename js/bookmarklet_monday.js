@@ -1,8 +1,6 @@
 console.log('Loaded font changing bookmarklet!!!');
 
 
-javascript:factor%3DMath.sqrt(2)%3B%20if(!window.scale)%20%7B%20scale%3D1%3B%20zW%3D%5B%5D%3B%20zH%3D%5B%5D%3B%20unitless%3D/%5E%5B0-9.%5D%2B%24/%3B%20function%20r(N)%20%7B%20w%3DN.width%3B%20h%3DN.height%3B%20if%20(unitless.test(w))%20zW.push(%5BN,w%5D)%3B%20if%20(unitless.test(h))%20zH.push(%5BN,h%5D)%3B%20var%20C%3DN.childNodes,i%3B%20for%20(i%3D0%3Bi%3CC.length%3B%2B%2Bi)%20r(C%5Bi%5D)%3B%20%7D%20r(document.body)%3B%20%7D%20scale*%3Dfactor%3B%20for(i%20in%20zW)%20zW%5Bi%5D%5B0%5D.width%3DzW%5Bi%5D%5B1%5D*scale%3B%20for(i%20in%20zH)%20zH%5Bi%5D%5B0%5D.height%20%3D%20zH%5Bi%5D%5B1%5D*scale%3B%20%5B%5D.v
-
 javascript:(function(){
 
 
