@@ -122,13 +122,9 @@ function initMyBookmarklet(){
     });
 });
 
-
-
- $(document).ready(function(){
-    $("body").toggle(
-        function(){$("body").css({"backgroundcolor": "red"});},
-        function(){$("body").css({"color": "blue"});},
-    });
+ $("p").toggle(
+    function(){$("p").css({"backgroundcolor": "red"});},
+    function(){$("p").css({"backgroundcolor": "blue"});},
 });
  $(document).ready(function(){
     $("input").keydown(function(){
