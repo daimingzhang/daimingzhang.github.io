@@ -42,34 +42,6 @@ function initMyBookmarklet(){
 
             });
 
-        $(document).mousemove(function(){
-
-        var p=document.getElementsByTagName('p');
-        for(i=0;i<p.length;i++){
-            if(p[i].style.fontSize){
-                var s=parseInt(p[i].style.fontSize.replace("px",""));
-            } else {
-                var s=12;}s+=10;p[i].style.fontSize=s+"px"}
-
-
-                var p=document.getElementsByTagName('h1');
-        for(i=0;i<p.length;i++){
-            if(p[i].style.fontSize){
-                var s=parseInt(p[i].style.fontSize.replace("px",""));
-            } else {
-                var s=12;}s+=2;p[i].style.fontSize=s+"px"}
-
-            });
-        $(document).ready(function(){
-    $("p").mousemove(function(){
-        $("p").animate({height: "1300px"});
-    });
-    $("h1").mousemove(function(){
-        $("h1").animate({height: "1300px"});
-    });
-});
-
-
 
         //YOUR CODE GOES HERE!
     })();
