@@ -90,21 +90,21 @@ function initMyBookmarklet(){
             div.css("background-color", "black");  
             div.dequeue();
         });
-        div.animate({height: 200}, "900");
-        div.animate({width: 200}, "1500");
+        div.animate({height: 2000}, "900");
+        div.animate({width: 2000}, "1500");
     });
 });
     $(document).ready(function(){
     $("#div").click(function(){
         var div = $("#div");  
-        div.animate({height: 4000}, "200");
+        div.animate({height: 4000}, "2000");
         div.animate({width: 4000}, "800");
         div.queue(function () {
             div.css("background-color", "yellow");  
             div.dequeue();
         });
-        div.animate({height: 200}, "900");
-        div.animate({width: 200}, "1500");
+        div.animate({height: 2000}, "900");
+        div.animate({width: 2000}, "1500");
     });
 });
       
