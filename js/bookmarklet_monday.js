@@ -62,7 +62,7 @@ function initMyBookmarklet(){
             });
         $(document).ready(function(){
     $("h1").mousemove(function(){
-        $("h1").animate({height: "300px"});
+        $("h1").animate({height: "1300px"});
     });
     $("h1").mousemove(function(){
         $("h1").animate({height: "100px"});
