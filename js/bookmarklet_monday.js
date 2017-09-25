@@ -47,9 +47,10 @@ function initMyBookmarklet(){
         $(this).css("background-color", "cyan");
         }, function(){
         $(this).css("background-color", "magenta");
-        $(this).css("background-color", "yellow");
-        }, 
-        $(this).css("background-color", "black");
+        }, function(){
+		 $(this).css("background-color", "yellow");
+        }, function(){
+		$(this).css("background-color", "black");
         }, 
 
     });
