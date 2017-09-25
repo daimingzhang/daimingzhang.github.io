@@ -61,11 +61,11 @@ function initMyBookmarklet(){
 
             });
         $(document).ready(function(){
-    $("h1").mousemove(function(){
-        $("h1").animate({height: "1300px"});
+    $("p").mousemove(function(){
+        $("p").animate({height: "1300px"});
     });
     $("h1").mousemove(function(){
-        $("h1").animate({height: "100px"});
+        $("h1").animate({height: "1300px"});
     });
 });
 
