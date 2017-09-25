@@ -31,6 +31,10 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
+
+        $(window).resize(function(){
+    $('p').fontSize(x += 1);
+});
         $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('p');
