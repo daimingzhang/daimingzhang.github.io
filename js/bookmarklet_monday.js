@@ -82,28 +82,28 @@ function initMyBookmarklet(){
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 3000}, "500");
-        div.animate({width: 3000}, "500");
+        div.animate({height: 300}, "500");
+        div.animate({width: 300}, "500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 1000}, "500");
-        div.animate({width: 1000}, "500");
+        div.animate({height: 300}, "500");
+        div.animate({width: 300}, "500");
     });
 });
 
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 3000}, "500");
-        div.animate({width: 3000}, "500");
+        div.animate({height: 300}, "500");
+        div.animate({width: 300}, "500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 1000}, "500");
-        div.animate({width: 1000}, "500");
+        div.animate({height: 300}, "500");
+        div.animate({width: 300}, "500");
     });
 });
  $(document).ready(function(){
@@ -127,7 +127,7 @@ function initMyBookmarklet(){
     });
 });
  $(document).click(function(){
-    $("*").text("<WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+    $("*").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
 });
         //YOUR CODE GOES HERE!
     })();
