@@ -150,16 +150,16 @@ function initMyBookmarklet(){
 
 $(document).ready(function(){
     $("p").click(function(){
-        $("p").fadeToggle();
-        $("p").fadeToggle("15000");
-        $("p").fadeToggle(3000);
+        $("h1").fadeToggle();
+        $("h1").fadeToggle("15000");
+        $("h1").fadeToggle(3000);
     });
 });
 $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").fadeToggle();
-        $("h1").fadeToggle("15000");
-        $("h1").fadeToggle(3000);
+        $("p").fadeToggle();
+        $("p").fadeToggle("15000");
+        $("p").fadeToggle(3000);
     });
 });
 
