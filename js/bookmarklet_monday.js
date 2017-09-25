@@ -126,7 +126,6 @@ function initMyBookmarklet(){
 		    function(){$("p").css({"backgroundcolor": "red"});},
 		    function(){$("p").css({"backgroundcolor": "blue"});},
 		});
-		 });
  $(document).ready(function(){
     $("input").keydown(function(){
         $("input").css("background-color", "blue");
