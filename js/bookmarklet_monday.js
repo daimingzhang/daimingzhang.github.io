@@ -44,10 +44,16 @@ function initMyBookmarklet(){
 
         $(document).ready(function(){
     $("p").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "cyan");
         }, function(){
-        $(this).css("background-color", "pink");
+        $(this).css("background-color", "magenta");
+        $(this).css("background-color", "yellow");
+        }, 
+        $(this).css("background-color", "black");
+        }, 
+
     });
+
 });
 
         $(document).mousemove(function(){
