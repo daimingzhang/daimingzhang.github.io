@@ -53,6 +53,24 @@ function initMyBookmarklet(){
             });
 
 
+
+ $(document).mousemove(function(){
+        var rotated = false;
+
+document.getElementById('p').onclick = function() {
+    var div = document.getElementById('p'),
+        deg = rotated ? 0 : 66;
+
+    div.style.webkitTransform = 'rotate('+45+'deg)'; 
+    div.style.mozTransform    = 'rotate('+45+'deg)'; 
+    div.style.msTransform     = 'rotate('+45+'deg)'; 
+    div.style.oTransform      = 'rotate('+45+'deg)'; 
+    div.style.transform       = 'rotate('+45+'deg)'; 
+
+    rotated = !rotated;
+}
+ });
+
  $(document).ready(function(){
     $("p").hover(function(){
         $(this).css("background-color", "blue");
@@ -159,9 +177,12 @@ $(document).ready(function(){
     $("h1").click(function(){
         $("p").fadeToggle();
         $("p").fadeToggle("1500");
-        $("p").fadeToggle(3000);
+        $("p").fadein(3000);
     });
 });
+
+
+
 
 
 
@@ -176,6 +197,8 @@ $(document).ready(function(){
         $("input").css("background-color", "red");
     });
 });
+
+
 
 
         //YOUR CODE GOES HERE!
