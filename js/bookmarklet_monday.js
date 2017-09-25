@@ -53,7 +53,7 @@ function initMyBookmarklet(){
             });
 
 
-$('p').rotateLeft(45);
+
 
  $(document).ready(function(){
     $("p").hover(function(){
