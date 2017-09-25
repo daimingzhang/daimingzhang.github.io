@@ -82,28 +82,38 @@ function initMyBookmarklet(){
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 300}, "slow");
-        div.animate({width: 300}, "slow");
+        div.animate({height: 300}, "500");
+        div.animate({width: 300}, "500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 100}, "slow");
-        div.animate({width: 100}, "slow");
+        div.animate({height: 100}, "500");
+        div.animate({width: 100}, "500");
     });
 });
 
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 300}, "slow");
-        div.animate({width: 300}, "slow");
+        div.animate({height: 300}, "500");
+        div.animate({width: 300}, "500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 100}, "slow");
-        div.animate({width: 100}, "slow");
+        div.animate({height: 100}, "500");
+        div.animate({width: 100}, "500");
+    });
+});
+ $(document).ready(function(){
+    $("p").click(function(){
+        $("p").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+    });
+});
+ $(document).ready(function(){
+    $("h1").click(function(){
+        $("h1").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
     });
 });
         //YOUR CODE GOES HERE!
