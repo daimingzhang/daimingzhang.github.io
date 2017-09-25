@@ -78,30 +78,32 @@ function initMyBookmarklet(){
 
     });
 });        
-    $(document).ready(function(){
-    $("h1").mouseup(function(){
-        $(this).after("<p style='color:green;'>you have already called 911.</p>");
-    });
-    $("h1").mousedown(function(){
-        $(this).after("<p style='color:purple;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
-    });
-});
 
-    $(document).ready(function(){
-    $("h1").click(function(){
-        $("h1").animate({height: 300}, 1500);
-        $("h1").animate({width: 300}, 1500);
-        $("h1").animate({height: 100}, 1500);
-        $("h1").animate({width: 100}, 1500);
+  $(document).ready(function(){
+    $("p").click(function(){
+        var div = $("p");  
+        div.animate({height: 300}, "slow");
+        div.animate({width: 300}, "slow");
+        div.queue(function () {
+            div.css("background-color", "red");  
+            div.dequeue();
+        });
+        div.animate({height: 100}, "slow");
+        div.animate({width: 100}, "slow");
     });
 });
 
  $(document).ready(function(){
-    $("p").click(function(){
-        $("p").animate({height: 300}, 1500);
-        $("p").animate({width: 300}, 1500);
-        $("p").animate({height: 100}, 1500);
-        $("p").animate({width: 100}, 1500);
+    $("h1").click(function(){
+        var div = $("h1");  
+        div.animate({height: 300}, "slow");
+        div.animate({width: 300}, "slow");
+        div.queue(function () {
+            div.css("background-color", "red");  
+            div.dequeue();
+        });
+        div.animate({height: 100}, "slow");
+        div.animate({width: 100}, "slow");
     });
 });
         //YOUR CODE GOES HERE!
