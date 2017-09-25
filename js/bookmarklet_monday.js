@@ -53,21 +53,17 @@ function initMyBookmarklet(){
             });
 
 
-        $(document).ready(function(){
-    $("p").mousemove(function(){
-        $(this).css("background-color", "blue");
-        }, function(){
-        $(this).css("background-color", "red");
-    	}, function(){
-        $(this).css("background-color", "yellow");
-        }, function(){
-        $(this).css("background-color", "black");
-
+  $(document).ready(function(){
+    $("p").mouseup(function(){
+        $(this).after("<p style='color:red;'>Mouse button released.</p>");
+    });
+    $("p").mousedown(function(){
+        $(this).after("<p style='color:blue;'>Mouse button pressed down.</p>");
     });
 });
 
     $(document).ready(function(){
-    $("h1").mousemove(function(){
+    $("h1").hover(function(){
         $(this).css("background-color", "blue");
         }, function(){
         $(this).css("background-color", "red");
@@ -82,28 +78,28 @@ function initMyBookmarklet(){
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 300}, "500");
-        div.animate({width: 300}, "500");
+        div.animate({height: 300}, "slow");
+        div.animate({width: 300}, "slow");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 300}, "500");
-        div.animate({width: 300}, "500");
+        div.animate({height: 300}, "slow");
+        div.animate({width: 300}, "slow");
     });
 });
 
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 300}, "500");
-        div.animate({width: 300}, "500");
+        div.animate({height: 300}, "slow");
+        div.animate({width: 300}, "slow");
         div.queue(function () {
-            div.css("background-color", "red");  
+            div.css("background-color", "blue");  
             div.dequeue();
         });
-        div.animate({height: 300}, "500");
-        div.animate({width: 300}, "500");
+        div.animate({height: 300}, "slow");
+        div.animate({width: 300}, "slow");
     });
 });
  $(document).ready(function(){
