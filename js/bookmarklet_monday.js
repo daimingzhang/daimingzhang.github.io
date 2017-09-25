@@ -53,10 +53,11 @@ function initMyBookmarklet(){
             });
 
 
-var c = document.getElementById("p");
-var ctx = c.getContext("2d");
-ctx.rotate(20 * Math.PI / 180);
-ctx.fillRect(50, 20, 100, 50);
+$(document).ready(function() {
+    $('p').click(function() {
+        $('p').toggleClass('rotated', "25deg");
+    });
+});
 
  $(document).ready(function(){
     $("p").hover(function(){
