@@ -87,6 +87,15 @@ function initMyBookmarklet(){
     });
 });
 
+    $(document).ready(function(){
+    $("p").click(function(){
+        $("p").animate({height: 300}, 1500);
+        $("p").animate({width: 300}, 1500);
+        $("p").animate({height: 100}, 1500);
+        $("p").animate({width: 100}, 1500);
+    });
+});
+
         //YOUR CODE GOES HERE!
     })();
 
