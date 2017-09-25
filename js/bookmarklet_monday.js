@@ -55,10 +55,10 @@ function initMyBookmarklet(){
 
   $(document).ready(function(){
     $("p").mouseup(function(){
-        $(this).after("<p style='color:red;'>Mouse button released.</p>");
+        $(this).after("<p style='backgroundcolor:red;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
     });
     $("p").mousedown(function(){
-        $(this).after("<p style='color:blue;'>Mouse button pressed down.</p>");
+        $(this).after("<p style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
     });
 });
 
@@ -104,22 +104,22 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("p").after("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("h1").after("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
     });
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").text("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("p").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").text("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("h1").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
     });
 });
         //YOUR CODE GOES HERE!
