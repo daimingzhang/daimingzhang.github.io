@@ -82,8 +82,8 @@ function initMyBookmarklet(){
 }); 
 
      $(document).ready(function(){
-    $("body").click(function(){
-        var div = $("body");  
+    $("content").click(function(){
+        var div = $("content");  
         div.animate({height: 400}, "200");
         div.animate({width: 400}, "800");
         div.queue(function () {
@@ -94,7 +94,20 @@ function initMyBookmarklet(){
         div.animate({width: 200}, "1500");
     });
 });
-     
+    $(document).ready(function(){
+    $("#div").click(function(){
+        var div = $("#div");  
+        div.animate({height: 400}, "200");
+        div.animate({width: 400}, "800");
+        div.queue(function () {
+            div.css("background-color", "yellow");  
+            div.dequeue();
+        });
+        div.animate({height: 200}, "900");
+        div.animate({width: 200}, "1500");
+    });
+});
+      
 
   $(document).ready(function(){
     $("p").click(function(){
