@@ -147,6 +147,18 @@ function initMyBookmarklet(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
 });
+
+$(document).ready(function(){
+    $("p").click(function(){
+        $("p").fadeToggle();
+        $("p").fadeToggle("slow");
+        $("p").fadeToggle(3000);
+    });
+});
+
+
+
+
 		
  $(document).ready(function(){
     $("input").keydown(function(){
