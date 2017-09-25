@@ -33,6 +33,17 @@ function initMyBookmarklet(){
         //YOUR CODE GOES HERE!
         $(document).mousemove(function(){
 
+        var p=document.getElementsByTagName('p');
+        for(i=0;i<p.length;i++){
+            if(p[i].style.fontSize){
+                var s=parseInt(p[i].style.fontSize.replace("px",""));
+            } else {
+                var s=12;}s+=2;p[i].style.fontSize=s+"px"}
+
+            });
+
+        $(document).mousemove(function(){
+
         var p=document.getElementsByTagName('h1');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontSize){
@@ -41,6 +52,12 @@ function initMyBookmarklet(){
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
 
             });
+
+		$(document).mousemove(function(){
+		    $("h1").blur(function(){
+		        alert("This input field has lost its focus.");
+		    });
+		});
 
 
         //YOUR CODE GOES HERE!
