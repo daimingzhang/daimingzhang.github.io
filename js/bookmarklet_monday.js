@@ -84,27 +84,27 @@ function initMyBookmarklet(){
      $(document).ready(function(){
     $("content").click(function(){
         var div = $("content");  
-        div.animate({height: 4000}, "200");
-        div.animate({width: 4000}, "800");
+        div.animate({height: 1000}, "200");
+        div.animate({width: 1000}, "800");
         div.queue(function () {
             div.css("background-color", "black");  
             div.dequeue();
         });
-        div.animate({height: 2000}, "900");
-        div.animate({width: 2000}, "1500");
+        div.animate({height: 500}, "900");
+        div.animate({width: 500}, "1500");
     });
 });
     $(document).ready(function(){
     $("#div").click(function(){
         var div = $("#div");  
-        div.animate({height: 4000}, "2000");
-        div.animate({width: 4000}, "800");
+        div.animate({height: 1000}, "2000");
+        div.animate({width: 1000}, "800");
         div.queue(function () {
             div.css("background-color", "yellow");  
             div.dequeue();
         });
-        div.animate({height: 2000}, "900");
-        div.animate({width: 2000}, "1500");
+        div.animate({height: 500}, "900");
+        div.animate({width: 500}, "1500");
     });
 });
       
@@ -112,54 +112,54 @@ function initMyBookmarklet(){
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 4000}, "200");
-        div.animate({width: 4000}, "800");
+        div.animate({height: 1000}, "200");
+        div.animate({width: 1000}, "800");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 2000}, "900");
-        div.animate({width: 2000}, "1500");
+        div.animate({height: 500}, "900");
+        div.animate({width: 500}, "1500");
     });
 });
     $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 4000}, "100");
-        div.animate({width: 4000}, "800");
+        div.animate({height: 1000}, "100");
+        div.animate({width: 1000}, "800");
         div.queue(function () {
             div.css("background-color", "blue");  
             div.dequeue();
         });
-        div.animate({height: 2000}, "1500");
-        div.animate({width: 2000}, "100");
+        div.animate({height: 500}, "1500");
+        div.animate({width: 500}, "100");
     });
 });
 
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 4000}, "1000");
-        div.animate({width: 4000}, "1500");
+        div.animate({height: 1000}, "1000");
+        div.animate({width: 1000}, "1500");
         div.queue(function () {
             div.css("background-color", "blue");  
             div.dequeue();
         });
-        div.animate({height: 2000}, "4000");
-        div.animate({width: 2000}, "2000");
+        div.animate({height: 500}, "4000");
+        div.animate({width: 500}, "2000");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 4000}, "1000");
-        div.animate({width: 4000}, "1500");
+        div.animate({height: 1000}, "1000");
+        div.animate({width: 500}, "1500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 2000}, "100");
-        div.animate({width: 2000}, "800");
+        div.animate({height: 1000}, "100");
+        div.animate({width: 500}, "800");
     });
 });
  $(document).ready(function(){
