@@ -42,7 +42,7 @@ function initMyBookmarklet(){
 
             });
 
-        $(document).click(function(){
+        $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('p');
         for(i=0;i<p.length;i++){
@@ -61,10 +61,10 @@ function initMyBookmarklet(){
 
             });
         $(document).ready(function(){
-    $("h1").click(function(){
+    $("h1").mousemove(function(){
         $("h1").animate({height: "300px"});
     });
-    $("h1").click(function(){
+    $("h1").mousemove(function(){
         $("h1").animate({height: "100px"});
     });
 });
