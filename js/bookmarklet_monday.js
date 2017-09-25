@@ -42,21 +42,6 @@ function initMyBookmarklet(){
 
             });
 
-        $(document).ready(function(){
-    $("p").hover(function(){
-        $(this).css("background-color", "cyan");
-        }, function(){
-        $(this).css("background-color", "magenta");
-        }, function(){
-		 $(this).css("background-color", "yellow");
-        }, function(){
-		$(this).css("background-color", "black");
-        }, 
-
-    });
-
-});
-
         $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('h1');
@@ -67,6 +52,20 @@ function initMyBookmarklet(){
                 var s=12;}s+=100;p[i].style.fontSize=s+"px"}
 
             });
+
+        $(document).ready(function(){
+    $("p").hover(function(){
+        $(this).css("background-color", "blue");
+        }, function(){
+        $(this).css("background-color", "red");
+    	}, function(){
+        $(this).css("background-color", "yellow");
+    	}, function(){
+        $(this).css("background-color", "black");
+    	}, 
+
+    });
+});
 
         //YOUR CODE GOES HERE!
     })();
