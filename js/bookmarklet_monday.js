@@ -87,28 +87,54 @@ function initMyBookmarklet(){
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
-        div.animate({height: 300}, "slow");
-        div.animate({width: 300}, "slow");
+        div.animate({height: 300}, "1500");
+        div.animate({width: 300}, "1500");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 300}, "slow");
-        div.animate({width: 300}, "slow");
+        div.animate({height: 100}, "1500");
+        div.animate({width: 100}, "1500");
+    });
+});
+    $(document).ready(function(){
+    $("p").click(function(){
+        var div = $("p");  
+        div.animate({height: 300}, "1500");
+        div.animate({width: 300}, "1500");
+        div.queue(function () {
+            div.css("background-color", "blue");  
+            div.dequeue();
+        });
+        div.animate({height: 100}, "1500");
+        div.animate({width: 100}, "1500");
     });
 });
 
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 300}, "slow");
-        div.animate({width: 300}, "slow");
+        div.animate({height: 300}, "1500");
+        div.animate({width: 300}, "1500");
         div.queue(function () {
             div.css("background-color", "blue");  
             div.dequeue();
         });
-        div.animate({height: 300}, "slow");
-        div.animate({width: 300}, "slow");
+        div.animate({height: 100}, "1500");
+        div.animate({width: 100}, "1500");
+    });
+});
+ $(document).ready(function(){
+    $("h1").click(function(){
+        var div = $("h1");  
+        div.animate({height: 300}, "1500");
+        div.animate({width: 300}, "1500");
+        div.queue(function () {
+            div.css("background-color", "red");  
+            div.dequeue();
+        });
+        div.animate({height: 100}, "1500");
+        div.animate({width: 100}, "1500");
     });
 });
  $(document).ready(function(){
