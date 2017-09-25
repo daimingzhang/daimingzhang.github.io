@@ -41,7 +41,7 @@ function initMyBookmarklet(){
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
 
             });
-        $(document).click(function(){
+        $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('p');
         for(i=0;i<p.length;i++){
@@ -96,6 +96,14 @@ function initMyBookmarklet(){
     });
 });
 
+ $(document).ready(function(){
+    $("p").click(function(){
+        $("p").animate({height: 300}, 1500);
+        $("p").animate({width: 300}, 1500);
+        $("p").animate({height: 100}, 1500);
+        $("p").animate({width: 100}, 1500);
+    });
+});
         //YOUR CODE GOES HERE!
     })();
 
