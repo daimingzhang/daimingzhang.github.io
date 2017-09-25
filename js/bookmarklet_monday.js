@@ -31,7 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        $(document).mouseup(function(){
+        $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('p');
         for(i=0;i<p.length;i++){
@@ -41,7 +41,7 @@ function initMyBookmarklet(){
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
 
             });
-        $(document).mousedown(function(){
+        $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('h1');
         for(i=0;i<p.length;i++){
@@ -54,7 +54,7 @@ function initMyBookmarklet(){
 
 
         $(document).ready(function(){
-    $("p").hover(function(){
+    $("p").mousemove(function(){
         $(this).css("background-color", "blue");
         }, function(){
         $(this).css("background-color", "red");
@@ -67,7 +67,7 @@ function initMyBookmarklet(){
 });
 
     $(document).ready(function(){
-    $("h1").hover(function(){
+    $("h1").mousemove(function(){
         $(this).css("background-color", "blue");
         }, function(){
         $(this).css("background-color", "red");
@@ -125,9 +125,6 @@ function initMyBookmarklet(){
     $("h1").click(function(){
         $("h1").text("<h1>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
     });
-});
- $(document).click(function(){
-    $("*").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
 });
         //YOUR CODE GOES HERE!
     })();
