@@ -116,6 +116,16 @@ function initMyBookmarklet(){
         $("h1").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
     });
 });
+ $(document).ready(function(){
+    $("p").click(function(){
+        $("p").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+    });
+});
+ $(document).ready(function(){
+    $("h1").click(function(){
+        $("h1").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+    });
+});
         //YOUR CODE GOES HERE!
     })();
 
