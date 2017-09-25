@@ -55,7 +55,7 @@ function initMyBookmarklet(){
 
 $(document).ready(function() {
     $('p').click(function() {
-        $('p').toggleClass('rotated', "25deg");
+        $('p').toggleClass('rotated');
     });
 });
 
@@ -158,7 +158,7 @@ $(document).ready(function(){
     $("p").click(function(){
         $("h1").fadeToggle();
         $("h1").fadeToggle("1500");
-        $("h1").fadeToggle(3000);
+        $("h1").fadeToggle(5000);
     });
 });
 $(document).ready(function(){
