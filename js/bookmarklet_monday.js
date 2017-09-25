@@ -126,6 +126,24 @@ function initMyBookmarklet(){
         $("h1").text("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
     });
 });
+ $(document).ready(function(){
+    $("p").click(function(){
+        var i;
+        var x = $("p").toArray()
+        for (i = 0; i< x.length; i++) {
+            alert(x[i].innerHTML);
+        }
+    });
+});
+ $(document).ready(function(){
+    $("h1").click(function(){
+        var i;
+        var x = $("h1").toArray()
+        for (i = 0; i< x.length; i++) {
+            alert(x[i].innerHTML);
+        }
+    });
+});
         //YOUR CODE GOES HERE!
     })();
 
