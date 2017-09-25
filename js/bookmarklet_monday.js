@@ -81,6 +81,33 @@ function initMyBookmarklet(){
     });
 }); 
 
+     $(document).ready(function(){
+    $("body").click(function(){
+        var div = $("body");  
+        div.animate({height: 400}, "200");
+        div.animate({width: 400}, "800");
+        div.queue(function () {
+            div.css("background-color", "red");  
+            div.dequeue();
+        });
+        div.animate({height: 200}, "900");
+        div.animate({width: 200}, "1500");
+    });
+});
+      $(document).ready(function(){
+    $("footer").click(function(){
+        var div = $("footer");  
+        div.animate({height: 400}, "200");
+        div.animate({width: 400}, "800");
+        div.queue(function () {
+            div.css("background-color", "red");  
+            div.dequeue();
+        });
+        div.animate({height: 200}, "900");
+        div.animate({width: 200}, "1500");
+    });
+});
+
   $(document).ready(function(){
     $("p").click(function(){
         var div = $("p");  
