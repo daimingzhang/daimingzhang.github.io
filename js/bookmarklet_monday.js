@@ -51,8 +51,17 @@ function initMyBookmarklet(){
         $(this).css("background-color", "yellow");
         }, function(){
         $(this).css("background-color", "black");
-    },
 
+    });
+});
+          $("h1").hover(function(){
+        $(this).css("background-color", "blue");
+        }, function(){
+        $(this).css("background-color", "red");
+    	}, function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "black");
 
     });
 });
