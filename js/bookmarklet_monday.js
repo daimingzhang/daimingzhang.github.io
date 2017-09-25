@@ -108,22 +108,22 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("p").after("<h5>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h5>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<p>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("h1").after("<h5>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h5>");
     });
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+        $("p").text("<h5>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h5>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").text("WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.");
+        $("h1").text("<h5>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h5>");
     });
 });
         //YOUR CODE GOES HERE!
