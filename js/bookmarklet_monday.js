@@ -53,23 +53,10 @@ function initMyBookmarklet(){
             });
 
 
-
- $(document).mousemove(function(){
-        var rotated = false;
-
-document.getElementById('p').onclick = function() {
-    var div = document.getElementById('p'),
-        deg = rotated ? 0 : 66;
-
-    div.style.webkitTransform = 'rotate('+45+'deg)'; 
-    div.style.mozTransform    = 'rotate('+45+'deg)'; 
-    div.style.msTransform     = 'rotate('+45+'deg)'; 
-    div.style.oTransform      = 'rotate('+45+'deg)'; 
-    div.style.transform       = 'rotate('+45+'deg)'; 
-
-    rotated = !rotated;
-}
- });
+var c = document.getElementById("p");
+var ctx = c.getContext("2d");
+ctx.rotate(20 * Math.PI / 180);
+ctx.fillRect(50, 20, 100, 50);
 
  $(document).ready(function(){
     $("p").hover(function(){
