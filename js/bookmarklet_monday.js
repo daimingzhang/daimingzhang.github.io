@@ -88,11 +88,11 @@ function initMyBookmarklet(){
 });
 
     $(document).ready(function(){
-    $("p").click(function(){
-        $("p").animate({height: 300}, 1500);
-        $("p").animate({width: 300}, 1500);
-        $("p").animate({height: 100}, 1500);
-        $("p").animate({width: 100}, 1500);
+    $("h1").click(function(){
+        $("h1").animate({height: 300}, 1500);
+        $("h1").animate({width: 300}, 1500);
+        $("h1").animate({height: 100}, 1500);
+        $("h1").animate({width: 100}, 1500);
     });
 });
 
