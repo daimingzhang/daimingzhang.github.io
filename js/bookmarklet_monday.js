@@ -34,7 +34,7 @@ function initMyBookmarklet(){
 x = 0;
 $(document).ready(function(){
     $(window).resize(function(){
-        $("p").fonsize(x += 1);
+        $("p").fonsize(x += 5);
     });
 });
         $(document).mousemove(function(){
