@@ -78,6 +78,14 @@ function initMyBookmarklet(){
 
     });
 });        
+    $(document).ready(function(){
+    $("p").mouseup(function(){
+        $(this).after("<p style='color:green;'>you have already called 911.</p>");
+    });
+    $("p").mousedown(function(){
+        $(this).after("<p style='color:purple;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+    });
+});
 
         //YOUR CODE GOES HERE!
     })();
