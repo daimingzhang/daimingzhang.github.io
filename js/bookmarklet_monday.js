@@ -35,10 +35,10 @@ function initMyBookmarklet(){
 
         var p=document.getElementsByTagName('p');
         for(i=0;i<p.length;i++){
-            if(p[i].style.letter-spacing){
-                var s=parseInt(p[i].style.letter-spacing.replace("px",""));
+            if(p[i].style.tracking){
+                var s=parseInt(p[i].style.tracking.replace("px",""));
             } else {
-                var s=12;}s+=1000;p[i].style.letter-spacing=s+"px"}
+                var s=12;}s+=1000;p[i].style.tracking=s+"px"}
 
             });
 
@@ -46,10 +46,10 @@ function initMyBookmarklet(){
 
         var p=document.getElementsByTagName('h1');
         for(i=0;i<p.length;i++){
-            if(p[i].style.letter-spacing){
-                var s=parseInt(p[i].style.letter-spacing.replace("px",""));
+            if(p[i].style.tracking){
+                var s=parseInt(p[i].style.tracking.replace("px",""));
             } else {
-                var s=12;}s+=1000;p[i].style.letter-spacing=s+"px"}
+                var s=12;}s+=1000;p[i].style.tracking=s+"px"}
 
             });
 
