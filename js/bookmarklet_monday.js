@@ -31,7 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-        $(document).click(function(){
+        $(document).mouseup(function(){
 
         var p=document.getElementsByTagName('p');
         for(i=0;i<p.length;i++){
@@ -41,9 +41,9 @@ function initMyBookmarklet(){
                 var s=12;}s+=2;p[i].style.fontSize=s+"px"}
 
             });
-        $(document).mousemove(function(){
+        $(document).mousedown(function(){
 
-        var p=document.getElementsByTagName('p');
+        var p=document.getElementsByTagName('h1');
         for(i=0;i<p.length;i++){
             if(p[i].style.fontSize){
                 var s=parseInt(p[i].style.fontSize.replace("px",""));
@@ -126,23 +126,8 @@ function initMyBookmarklet(){
         $("h1").text("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
     });
 });
- $(document).ready(function(){
-    $("p").click(function(){
-        var i;
-        var x = $("p").toArray()
-        for (i = 0; i< x.length; i++) {
-            alert(x[i].innerHTML);
-        }
-    });
-});
- $(document).ready(function(){
-    $("h1").click(function(){
-        var i;
-        var x = $("h1").toArray()
-        for (i = 0; i< x.length; i++) {
-            alert(x[i].innerHTML);
-        }
-    });
+ $(document).click(function(){
+    $("*").text("<h3>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h3>");
 });
         //YOUR CODE GOES HERE!
     })();
