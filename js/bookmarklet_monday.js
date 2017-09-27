@@ -64,12 +64,27 @@ function initMyBookmarklet(){
 
     });
 });    
+  $(document).ready(function(){
+    $("p").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "red");
+
+    });
+});    
 
     $(document).ready(function(){
     $("h1").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
         $(this).css("background-color", "blue");
+
+    });
+      $(document).ready(function(){
+    $("h1").hover(function(){
+        $(this).css("background-color", "red");
+        }, function(){
+        $(this).css("background-color", "black");
 
     });
 }); $(document).ready(function(){
