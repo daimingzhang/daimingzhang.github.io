@@ -152,9 +152,7 @@ function initMyBookmarklet(){
         $("h1").css({
             "transform":'rotate(-45deg)',
         })
-        $("div").css({
-            "transform":'rotate(15deg)',
-        })
+        
     });
 });
 
