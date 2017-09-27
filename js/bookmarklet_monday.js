@@ -78,13 +78,13 @@ function initMyBookmarklet(){
     $("p").click(function(){
         var div = $("p");  
         div.animate({height: 300}, "200");
-        div.animate({width: 300}, "800");
+        div.animate({width: 800}, "800");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 100}, "900");
-        div.animate({width: 100}, "1100");
+        div.animate({height: 400}, "900");
+        div.animate({width: 300}, "1100");
     });
 });
     $(document).ready(function(){
@@ -97,33 +97,33 @@ function initMyBookmarklet(){
             div.dequeue();
         });
         div.animate({height: 100}, "1100");
-        div.animate({width: 100}, "100");
+        div.animate({width: 200}, "100");
     });
 });
 
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 300}, "300");
+        div.animate({height: 700}, "300");
         div.animate({width: 300}, "1100");
         div.queue(function () {
             div.css("background-color", "blue");  
             div.dequeue();
         });
-        div.animate({height: 100}, "4000");
-        div.animate({width: 100}, "2000");
+        div.animate({height: 1030}, "4000");
+        div.animate({width: 1300}, "2000");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
         var div = $("h1");  
-        div.animate({height: 300}, "300");
+        div.animate({height: 500}, "300");
         div.animate({width: 300}, "1100");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 100}, "100");
+        div.animate({height: 350}, "100");
         div.animate({width: 100}, "800");
     });
 });
