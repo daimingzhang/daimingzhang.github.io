@@ -67,9 +67,9 @@ function initMyBookmarklet(){
 
     $(document).ready(function(){
     $("h1").hover(function(){
-        $(this).css("background-color", "blue");
+        $(this).css("background-color", "green");
         }, function(){
-        $(this).css("background-color", "red");
+        $(this).css("background-color", "brown");
 
     });
 }); $(document).ready(function(){
@@ -81,19 +81,7 @@ function initMyBookmarklet(){
     });
 }); 
 
-     $(document).ready(function(){
-    $("div").click(function(){
-        var div = $("div");  
-        div.animate({height: 300}, "200");
-        div.animate({width: 300}, "800");
-        div.queue(function () {
-            div.css("background-color", "black");  
-            div.dequeue();
-        });
-        div.animate({height: 100}, "900");
-        div.animate({width: 100}, "1100");
-    });
-});
+
    
       
 
@@ -163,12 +151,6 @@ function initMyBookmarklet(){
         })
         $("h1").css({
             "transform":'rotate(-45deg)',
-        })
-        $("p").css({
-            "transform":'rotate(-45deg)',
-        })
-        $("h1").css({
-            "transform":'rotate(45deg)',
         })
     });
 });
