@@ -146,13 +146,16 @@ function initMyBookmarklet(){
  $(document).ready(function(){
     $("h1").click(function(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>red blue black yellow green brown</h1>");
+$(document).ready(function(){
+    $("div").click(function(){
+        $("div").after("<h1 style='backgroundcolor:blue;'>red blue black yellow green brown</h1>");
         $("p").css({
             "transform":'rotate(45deg)',
         })
         $("h1").css({
             "transform":'rotate(-45deg)',
         })
-        
+
     });
 });
 
