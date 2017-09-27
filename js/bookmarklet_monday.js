@@ -54,7 +54,7 @@ function initMyBookmarklet(){
             });
 
 $(document).ready(function(){
-    $("p,h1").click(function(event){
+    $("p, button, h1").click(function(event){
         $("div").html("Triggered by a " + event.target.nodeName + " element.");
     });
 
@@ -91,8 +91,8 @@ $(document).ready(function(){
     });
 });
        $(document).ready(function(){
-    $("div").click(function(){
-        var div = $("div");  
+    $(":footer").click(function(){
+        var div = $(":footer");  
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
