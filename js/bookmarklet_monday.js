@@ -149,12 +149,12 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("<p style='backgroundcolor:red;'>cmyk cmyk cmyk cmyk cmyk cmyk cmyk cmyk</p>");
+        $("p").after("<p style='backgroundcolor:red;'>Cyan Magenta Yellow Black Cyan Magenta Yellow Black</p>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<h1 style='backgroundcolor:blue;'>cmyk cmyk cmyk cmyk cmyk cmyk cmyk cmyk</h1>");
+        $("h1").after("<h1 style='backgroundcolor:blue;'>Cyan Magenta Yellow Black Cyan Magenta Yellow Black</h1>");
         $("p").css({
             "transform":'rotate(45deg)',
         })
