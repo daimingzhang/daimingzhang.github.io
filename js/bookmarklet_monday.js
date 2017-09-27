@@ -87,7 +87,8 @@ function initMyBookmarklet(){
         $(this).css("background-color", "black");
 
     });
-}); $(document).ready(function(){
+});
+ $(document).ready(function(){
     $("div").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
