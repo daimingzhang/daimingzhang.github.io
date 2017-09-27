@@ -87,20 +87,7 @@ function initMyBookmarklet(){
         div.animate({width: 100}, "1100");
     });
 });
-    $(document).ready(function(){
-    $("div").click(function(){
-        var div = $("div");  
-        div.animate({height: 300}, "2000");
-        div.animate({width: 300}, "800");
-        div.queue(function () {
-            div.css("background-color", "yellow");  
-            div.dequeue();
-        });
-        div.animate({height: 100}, "900");
-        div.animate({width: 100}, "1100");
-    });
-});
-      
+  
 
   $(document).ready(function(){
     $("p").click(function(){
