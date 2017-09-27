@@ -80,7 +80,7 @@ function initMyBookmarklet(){
         $(this).css("background-color", "blue");
 
     });
-    
+
 }); $(document).ready(function(){
     $("div").hover(function(){
         $(this).css("background-color", "yellow");
@@ -160,9 +160,6 @@ function initMyBookmarklet(){
         })
         $("h1").css({
             "transform":'rotate(-45deg)',
-        })
-        $("div").css({
-            "transform":'rotate(25deg)',
         })
     });
 });
