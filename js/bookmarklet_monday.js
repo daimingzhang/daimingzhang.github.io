@@ -127,6 +127,17 @@ function initMyBookmarklet(){
         div.animate({width: 100}, "800");
     });
 });
+ $(document).ready(function(){
+    $("p").click(function(){
+        $("p").after("<p style='backgroundcolor:red;'>Cyan Magenta Yellow Black Cyan Magenta Yellow Black</p>");
+    });
+});
+ $(document).ready(function(){
+    $("h1").click(function(){
+        $("h1").after("<h1 style='backgroundcolor:blue;'>Cyan Magenta Yellow Black Cyan Magenta Yellow Black</h1>");
+     
+    });
+});
 
 /*$(document).ready(function(){
     $("p").click(function(){
