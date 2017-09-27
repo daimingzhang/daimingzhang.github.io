@@ -53,10 +53,7 @@ function initMyBookmarklet(){
 
             });
 
-$(document).ready(function(){
-    $("p, button, h1").click(function(event){
-        $("div").html("Triggered by a " + event.target.nodeName + " element.");
-    });
+
 
 
  $(document).ready(function(){
@@ -83,7 +80,7 @@ $(document).ready(function(){
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
-            div.css("background-color", "green");  
+            div.css("background-color", "black");  
             div.dequeue();
         });
         div.animate({height: 100}, "900");
