@@ -138,12 +138,12 @@ function initMyBookmarklet(){
     $("h1").click(function(){
         var div = $("h1");  
         div.animate({height: 300}, "300");
-        div.animate({width: 100}, "1100");
+        div.animate({width: 300}, "1100");
         div.queue(function () {
             div.css("background-color", "red");  
             div.dequeue();
         });
-        div.animate({height: 300}, "100");
+        div.animate({height: 100}, "100");
         div.animate({width: 100}, "800");
     });
 });
