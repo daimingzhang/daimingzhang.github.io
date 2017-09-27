@@ -140,15 +140,15 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("<p style='backgroundcolor:red;'>red blue black yellow green brown</p>");
+        $("p").after("<p style='backgroundcolor:red;'> CMYK CMYK CMYK CMYK CMYK CMYK CMYK CMYK</p>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<h1 style='backgroundcolor:blue;'>red blue black yellow green brown</h1>");
+        $("h1").after("<h1 style='backgroundcolor:blue;'>CMYK CMYK CMYK CMYK CMYK CMYK CMYK CMYK</h1>");
 $(document).ready(function(){
     $("div").click(function(){
-        $("div").after("<h1 style='backgroundcolor:blue;'>red blue black yellow green brown</h1>");
+        $("div").after("<h1 style='backgroundcolor:blue;'>CMYK CMYK CMYK CMYK CMYK CMYK CMYK CMYK</h1>");
         $("p").css({
             "transform":'rotate(45deg)',
         })
