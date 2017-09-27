@@ -66,7 +66,7 @@ function initMyBookmarklet(){
 });    
   $(document).ready(function(){
     $("p").hover(function(){
-        $(this).css("background-color", "yellow");
+        $(this).css("background-color", "black");
         }, function(){
         $(this).css("background-color", "red");
 
@@ -77,7 +77,7 @@ function initMyBookmarklet(){
     $("h1").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
-        $(this).css("background-color", "blue");
+        $(this).css("background-color", "black");
 
     });
 
@@ -85,7 +85,7 @@ function initMyBookmarklet(){
     $("div").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
-        $(this).css("background-color", "black");
+        $(this).css("background-color", "blue");
 
     });
 }); 
