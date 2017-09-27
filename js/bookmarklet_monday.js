@@ -53,6 +53,16 @@ function initMyBookmarklet(){
 
             });
 
+         $(document).mousemove(function(){
+
+        var p=document.getElementsByTagName('div');
+        for(i=0;i<p.length;i++){
+            if(p[i].style.fontSize){
+                var s=parseInt(p[i].style.fontSize.replace("px",""));
+            } else {
+                var s=40;}s+=1;p[i].style.fontSize=s+"px"}
+
+            });
 
 
 
@@ -146,6 +156,9 @@ function initMyBookmarklet(){
  $(document).ready(function(){
     $("h1").click(function(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>cmyk cmyk cmyk cmyk cmyk cmyk cmyk cmyk</h1>");
+
+        $("div").click(function(){
+        $("div").after("<h1 style='backgroundcolor:blue;'>cmyk cmyk cmyk cmyk cmyk cmyk cmyk cmyk</h1>");
         $("p").css({
             "transform":'rotate(45deg)',
         })
