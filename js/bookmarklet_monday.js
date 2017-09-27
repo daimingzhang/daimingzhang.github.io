@@ -52,16 +52,6 @@ function initMyBookmarklet(){
                 var s=40;}s+=1;p[i].style.fontSize=s+"px"}
 
             });
-        $(document).mousemove(function(){
-
-        var p=document.getElementsByTagName('div');
-        for(i=0;i<p.length;i++){
-            if(p[i].style.fontSize){
-                var s=parseInt(p[i].style.fontSize.replace("px",""));
-            } else {
-                var s=40;}s+=1;p[i].style.fontSize=s+"px"}
-
-            });
 
 
 
@@ -83,7 +73,7 @@ function initMyBookmarklet(){
 
     });
 }); $(document).ready(function(){
-    $("h1").hover(function(){
+    $("div").hover(function(){
         $(this).css("background-color", "yellow");
         }, function(){
         $(this).css("background-color", "black");
@@ -92,8 +82,8 @@ function initMyBookmarklet(){
 }); 
 
      $(document).ready(function(){
-    $(":header").click(function(){
-        var div = $(":header");  
+    $("div").click(function(){
+        var div = $("div");  
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
@@ -170,6 +160,12 @@ function initMyBookmarklet(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
         $("p").css({
             "transform":'rotate(45deg)',
+        })
+        $("h1").css({
+            "transform":'rotate(-45deg)',
+        })
+        $("p").css({
+            "transform":'rotate(-45deg)',
         })
         $("h1").css({
             "transform":'rotate(45deg)',
