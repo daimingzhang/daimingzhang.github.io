@@ -75,8 +75,8 @@ function initMyBookmarklet(){
 }); 
 
      $(document).ready(function(){
-    $(":header").click(function(){
-        var div = $(":header");  
+    $("content").click(function(){
+        var div = $("content");  
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
@@ -87,20 +87,20 @@ function initMyBookmarklet(){
         div.animate({width: 100}, "1100");
     });
 });
-       $(document).ready(function(){
-    $(":footer").click(function(){
-        var div = $(":footer");  
-        div.animate({height: 300}, "200");
+    $(document).ready(function(){
+    $("#div").click(function(){
+        var div = $("#div");  
+        div.animate({height: 300}, "2000");
         div.animate({width: 300}, "800");
         div.queue(function () {
-            div.css("background-color", "black");  
+            div.css("background-color", "yellow");  
             div.dequeue();
         });
         div.animate({height: 100}, "900");
         div.animate({width: 100}, "1100");
     });
 });
-  
+      
 
   $(document).ready(function(){
     $("p").click(function(){
