@@ -53,7 +53,10 @@ function initMyBookmarklet(){
 
             });
 
-
+$(document).ready(function(){
+    $("p,h1").click(function(event){
+        $("div").html("Triggered by a " + event.target.nodeName + " element.");
+    });
 
 
  $(document).ready(function(){
