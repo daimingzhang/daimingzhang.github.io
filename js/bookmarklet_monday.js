@@ -75,8 +75,21 @@ function initMyBookmarklet(){
 }); 
 
      $(document).ready(function(){
-    $("content").click(function(){
-        var div = $("content");  
+    $(":header").click(function(){
+        var div = $("header");  
+        div.animate({height: 300}, "200");
+        div.animate({width: 300}, "800");
+        div.queue(function () {
+            div.css("background-color", "green");  
+            div.dequeue();
+        });
+        div.animate({height: 100}, "900");
+        div.animate({width: 100}, "1100");
+    });
+});
+       $(document).ready(function(){
+    $("footer").click(function(){
+        var div = $("footer");  
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
