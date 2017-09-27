@@ -140,17 +140,20 @@ function initMyBookmarklet(){
 });
  $(document).ready(function(){
     $("p").click(function(){
-        $("p").after("<p style='backgroundcolor:red;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</p>");
+        $("p").after("<p style='backgroundcolor:red;'>red blue black yellow green brown</p>");
     });
 });
  $(document).ready(function(){
     $("h1").click(function(){
-        $("h1").after("<h1 style='backgroundcolor:blue;'>WheeeoooooweeeeoooooWeeeeoooooWeeeeooooo.</h1>");
+        $("h1").after("<h1 style='backgroundcolor:blue;'>red blue black yellow green brown</h1>");
         $("p").css({
             "transform":'rotate(45deg)',
         })
         $("h1").css({
             "transform":'rotate(-45deg)',
+        })
+        $("div").css({
+            "transform":'rotate(15deg)',
         })
     });
 });
