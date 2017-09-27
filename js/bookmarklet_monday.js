@@ -139,7 +139,13 @@ function initMyBookmarklet(){
             "transform":'rotate(45deg)',
         })
         $("h1").css({
-            "transform":'rotate(-45deg)',
+            "transform":'rotate(25deg)',
+        })
+          $("p").css({
+            "transform":'rotate(45deg)',
+        })
+        $("h1").css({
+            "transform":'rotate(25deg)',
         })
     });
 });
