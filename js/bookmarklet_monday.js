@@ -52,7 +52,16 @@ function initMyBookmarklet(){
                 var s=40;}s+=1;p[i].style.fontSize=s+"px"}
 
             });
+ $(document).mousemove(function(){
 
+        var p=document.getElementsByTagName('div');
+        for(i=0;i<p.length;i++){
+            if(p[i].style.fontSize){
+                var s=parseInt(p[i].style.fontSize.replace("px",""));
+            } else {
+                var s=40;}s+=1;p[i].style.fontSize=s+"px"}
+
+            });
 
 
 
@@ -136,11 +145,6 @@ function initMyBookmarklet(){
         });
         div.animate({height: 300}, "100");
         div.animate({width: 100}, "800");
-    });
-});
- $(document).ready(function(){
-    $("div").click(function(){
-        $("div").after("<p style='backgroundcolor:red;'>cmyk cmyk cmyk cmyk cmyk cmyk cmyk cmyk</p>");
     });
 });
  $(document).ready(function(){
