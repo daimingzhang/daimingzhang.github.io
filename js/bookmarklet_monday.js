@@ -31,12 +31,7 @@ function initMyBookmarklet(){
     (window.myBookmarklet = function (){
 
         //YOUR CODE GOES HERE!
-x = 0;
-$(document).ready(function(){
-    $(window).resize(function(){
-        $("p").fonsize(x += 5);
-    });
-});
+
         $(document).mousemove(function(){
 
         var p=document.getElementsByTagName('p');
@@ -80,8 +75,8 @@ $(document).ready(function(){
 }); 
 
      $(document).ready(function(){
-    $("content").click(function(){
-        var div = $("content");  
+    $("container").click(function(){
+        var div = $("container");  
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
@@ -93,8 +88,8 @@ $(document).ready(function(){
     });
 });
     $(document).ready(function(){
-    $("#div").click(function(){
-        var div = $("#div");  
+    $("div").click(function(){
+        var div = $("div");  
         div.animate({height: 300}, "2000");
         div.animate({width: 300}, "800");
         div.queue(function () {
