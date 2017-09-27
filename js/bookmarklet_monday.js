@@ -91,8 +91,8 @@ $(document).ready(function(){
     });
 });
        $(document).ready(function(){
-    $("footer").click(function(){
-        var div = $("footer");  
+    $("div").click(function(){
+        var div = $("div");  
         div.animate({height: 300}, "200");
         div.animate({width: 300}, "800");
         div.queue(function () {
@@ -170,6 +170,9 @@ $(document).ready(function(){
             "transform":'rotate(45deg)',
         })
         $("h1").css({
+            "transform":'rotate(45deg)',
+        })
+        $("div").css({
             "transform":'rotate(45deg)',
         })
     });
