@@ -67,9 +67,9 @@ function initMyBookmarklet(){
 
     $(document).ready(function(){
     $("h1").hover(function(){
-        $(this).css("background-color", "green");
+        $(this).css("background-color", "blue");
         }, function(){
-        $(this).css("background-color", "brown");
+        $(this).css("background-color", "yellow");
 
     });
 }); $(document).ready(function(){
@@ -146,9 +146,7 @@ function initMyBookmarklet(){
  $(document).ready(function(){
     $("h1").click(function(){
         $("h1").after("<h1 style='backgroundcolor:blue;'>CMYK CMYK CMYK CMYK CMYK CMYK CMYK CMYK</h1>");
-$(document).ready(function(){
-    $("div").click(function(){
-        $("div").after("<h1 style='backgroundcolor:blue;'>CMYK CMYK CMYK CMYK CMYK CMYK CMYK CMYK</h1>");
+
         $("p").css({
             "transform":'rotate(45deg)',
         })
