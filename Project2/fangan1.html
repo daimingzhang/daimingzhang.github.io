@@ -13,11 +13,15 @@
   .container{
     height: 100%;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow-x: hidden;
     overflow-y: hidden;
+    	animation: across 5s infinite;
+
 
    }
+
+
 
 
   .frame{
@@ -27,33 +31,32 @@
     top:8%;
     left:8%;
     transform: rotate(45deg);
-    overflow-y:hidden;
-    overflow-x: hidden;
+  	overflow: hidden;
+  	animation: across 8s infinite;
   }
-
-  .frame::-webkit-scrollbar {
-    display: none;
-}
-  #frame1{
-  	    width: 1150px;
-    height: 1150px;
-    position: absolute;
-    top: -50px;
-    left: 155px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+ .frame::-webkit-scrollbar 
+ 	{display:none
+ 	}
+ 
 
    body{
    	width: 100%;
    	height: 100%;
-   	position: fixed;
+   	position: absolute;
+   	  overflow-y:hidden;
+    overflow-x: hidden;
    }
-   .text{
 
-   }
-
-
+@keyframes across {
+	  20%{
+	    transform: rotate(0deg);
+	  }
+	  60% {   
+	    transform: rotate(180deg);
+	}
+	   
+	  }
+	}
 
   </style>
 </head>
@@ -61,11 +64,11 @@
 <body>
   
 			 	<div class="container">
-			 	
+
 			 		
 			 		<iframe frameborder="0" src="https://daimingzhang.github.io/Project2/fix.html" width="100%" height="100%"></iframe>
 
-			 	 	<div class="frame" id="frame1">
+			 	 	<div class="frame">
 						<iframe frameborder="0" src="https://daimingzhang.github.io/Project2/fix.html" width="100%" height="100%"></iframe>
 
 			 	 		 <div class="frame">
