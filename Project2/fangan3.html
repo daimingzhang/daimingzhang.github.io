@@ -4,48 +4,50 @@
 <head>
 
   <title>
-   Nesting David
+   Color layers
   </title>
   <style>
 
- 
 
   .container{
     height: 100%;
-    width: 100%;
+    width: 120%;
     position: absolute;
     overflow-x: hidden;
     overflow-y: hidden;
-      	animation: across 10s infinite;
-      	  	animation-delay: 25s;
+    margin-left:-10px;
+    margin-top:-10px; 
+    cursor: row-resize; 
 
 
 }
-
-
-
-
+.container::-webkit-scrollbar {
+    display: none;
+}
   .frame{
     height: 80%;
-    width: 100%;
+    width: 120%;
     position: absolute;
     top:10%;
     left:0%;
-  	overflow: hidden;
-  	animation: across 20s infinite;
-  	animation-delay: 15s;
+  	overflow: visible;
+  	animation: across 60s infinite;
+  	animation-direction:alternate;
+  	    cursor: row-resize; 
+
+
   }
-  .frame::-webkit-scrollbar {
-    display: none;
-}
- .container::-webkit-scrollbar {
-    display: none;
-}
-iframe::-webkit-scrollbar {
+  iframe{
+  	    cursor: row-resize; 
+
+  }
+  iframe::-webkit-scrollbar {
     display: none;
 }
 
- 
+ .frame::-webkit-scrollbar {
+    display: none;
+}
 
    body{
    	width: 100%;
@@ -53,20 +55,23 @@ iframe::-webkit-scrollbar {
    	position: absolute;
    	  overflow-y:hidden;
     overflow-x: hidden;
-      	
+        cursor: row-resize; 
 
-   }
+     }
 
 @keyframes across {
-	  
-	  15% {   
+	0%{
+		transform: rotate(0deg);
+	}
+	15%{
+		transform: rotate(180deg);
+	}
+	33.3% { 
 	    transform: rotate(0deg);
 	}
-	50% { 
-	    transform: rotate(180deg);
+	66.6%{
+		transform: rotate(-90deg);
 	}
-	   
-	  }
 	}
   </style>
 </head>
@@ -106,7 +111,7 @@ iframe::-webkit-scrollbar {
 			 	 		 	 		 	 	 	 	 	<iframe frameborder="0" src="https://daimingzhang.github.io/Project2/fix.html" width="100%" height="100%"></iframe>
 			 	 		 	 		 	 	 	 	 		 <div class="frame">
 			 	 		 	 		 	 	 	 	 	<iframe frameborder="0" src="https://daimingzhang.github.io/Project2/fix.html" width="100%" height="100%"></iframe>
-			 	 		 	 		 	 	 	 	 	 <div class="frame">
+			 	 		 	 		 	 	 	 	 	 <div class="frame" id="frame1">
 
 			 	 		 	 		 	 	 	 	 	<iframe frameborder="0" src="https://daimingzhang.github.io/Project2/fix.html" width="100%" height="100%"></iframe>
 			 	 		 	 		 	 	 	 	 
