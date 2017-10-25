@@ -15,10 +15,9 @@
     position: absolute;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-left:-10px;
-    margin-top:-10px; 
-    cursor: row-resize; 
-
+    overflow:hidden;
+    margin-left:-5%;
+    margin-top:-0.6%;
 
 }
 .container::-webkit-scrollbar {
@@ -31,14 +30,14 @@
     top:10%;
     left:0%;
   	overflow: visible;
-  	animation: across 60s infinite;
+  	animation: across 100s infinite;
   	animation-direction:alternate;
-  	    cursor: row-resize; 
 
-
-  }
+}
+.frame:hover{
+}
   iframe{
-  	    cursor: row-resize; 
+  	    overflow:hidden;
 
   }
   iframe::-webkit-scrollbar {
@@ -55,7 +54,6 @@
    	position: absolute;
    	  overflow-y:hidden;
     overflow-x: hidden;
-        cursor: row-resize; 
 
      }
 
@@ -63,10 +61,10 @@
 	0%{
 		transform: rotate(0deg);
 	}
-	15%{
+	25%{
 		transform: rotate(180deg);
 	}
-	33.3% { 
+	40% { 
 	    transform: rotate(0deg);
 	}
 	66.6%{
