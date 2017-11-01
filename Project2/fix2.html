@@ -1,0 +1,404 @@
+
+<head>
+	<title>Compulsive Color Scroll</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	
+    <meta property="og:title" content="Compulsive Color Scroll" />
+    <meta property="og:url" content="http://www.farfotsel.com/colorscroll/" />
+    <meta property="og:image" content="http://www.farfotsel.com/colorscroll/tn_colorscroll.png" />
+
+	<script type="text/javascript">
+
+function inIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}
+
+function isTouchDevice(){
+  try{
+    document.createEvent("TouchEvent");
+    return true;
+  }catch(e){
+    return false;
+  }
+}
+
+
+var state;
+var STOPPED = "STOPPED";
+var STARTED = "STARTED";
+function stop(){
+  if(state != STOPPED){
+    state = STOPPED;
+    console.log("stop " + location.href);
+  }
+}
+
+function start() {
+  if(state != STARTED){
+    state = STARTED
+    console.log("start "+ location.href);
+  }
+}
+
+var DEBUG_ANIMATE = false;
+
+
+if(!inIframe())document.write('<script type="text/javascript" src="/js/analytics.js" async><\/script>');
+</script>
+
+<style type="text/css">
+body {
+	margin: 0px;
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkBAMAAACCzIhnAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAqUExURQAAAEdwTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKmMHTsAAAAOdFJOU/4AVg7Diqc5530rHAfU0ix/mAAAA9lJREFUWAntmL9rFEEUx0cTY1QCN3f+Su6KTSGCWFwgkkrYIAqCxZ0axe4EEywsEoPEMhHUSrgDrbS4+BfclRYWkWh9YKGQf8b3Zva9eTM7d9lLJ2SL7Lwfn/nOr5vZidJjP2psQh8j445ZfMRqXz+trT25thetLYbUrgyUeWbux6AIcum5BfDvu428UB4pDxyh1Mx8jskhPhFjQqTakhpYnuoHOiGShIRSJ0cjv/KEUi98xleppIR8uPPsL5UnFzzGR75nWXc3MWnpY2YeDEeq2yZn+jOlfLOOmT458O2p3LTEdZfwwzK/ncdHaqlBvsj4T+OalC6pcsGE/8iw1q+NsymcEkkwGgyPtoMo50YglW1EgknQ2kzV9IKTEYhp15QLUamFNTXJ8rrfxdA9Cs12qLSP/rNkeUgLItN9CrXPUMnMllB3DZvDyk5T3qxSHSonGNklS0zlRQw8pUBbKZbxIwKpI9LPEBBxMlU0JqgygSTgP0X+NhhOpgGGmxnXlxT856SIk+lByK0ZRirg5q600XAypjML1AJGypgzb92mJ2h3rC1jYl7M3O/ZlDam45MNWg3LTRsTyHnwZu1lEZZJIbicQy6DNxuwNhSzJ5NpgLmTQ+rgtQM5t7Ky8ggstQqFXZOYgMUTw93vgpeXizarx6Yjsw5BXpiMoJemRYdID4Jcn4ewdojUo0gC3hPYCPMEDStBkFcMq/wHSGVra+slNF5dhcKC6VoJrFF9sTsXMryrlaA4CtGLmGyfW3YAS2CNRJwMbZ2HIk4mE9GHIyRDIgUQkiGRIoiVYZEiiJVhkUIIyjiRQgjKOJFiSCUVIsUQvShECiIVuyBHLZh1JTYRm+j+1iEY/+277cJlm1IvinSlNyCGbEp1QHh9h0gCwQly8nYhNliKuXcDkB0yGRHbOMXcOwVkmUxG5GFBQXqb46pJFiNlqIiOJArS248x4h18lJu9hxx8OgWVIRPTg1DkeNUJ+PkQ92UaEHITwA3TdfDzp4KHDP1UCD47BBREnIo5H5y8QBLU32WHQ3QLAu7jijN0dRsC0Y8r3YWI+4RzyD76+aQU577WR/hQPMLnqPlVyK3ItM3ugvyTBJ/ovm2Zeu96gSX7ad0RTonoFDuqHoiwvmFcbrVAzEPGvybo6sDUOc5lRNOV5/YmNm7poalBqQPZVL9h2Z0AEwtfrOydIKubX8HNwes+6CecyIU3XrOCEYPYEa6iujzg6k0hf0kOG6YDJk8EI2ZaLS/vbzeCjoCZV9G69iq1jZt8vJcnoghA8I+I1XH+ERGpWbpiDZPxSPkYiQzKSNc/ODZqd4KxdrcAAAAASUVORK5CYII='), auto;
+}
+
+#div0 {
+	height:100vh;
+	background-color: #c1d0b2;
+}
+
+#div1 {
+	height:100vh;
+	background-color: #81a69c;
+}
+
+#div2 {
+	height:100vh;
+	background-color: #9e997d;
+}
+
+#div3 {
+	height:100vh;
+	background-color: #af3833;
+}
+
+#div4 {
+	height:100vh;
+	background-color: #fb7b2b;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<style type="text/css">
+
+#moreinfo_pane {
+  display: block;
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  
+ 
+}
+
+#logohref {
+  position: absolute;
+  top: 0px;
+  z-index:2000;
+}
+#logohref img {
+  margin:0px;image-rendering: crisp-edges;margin-top:-2px;margin-bottom:-4px;
+}
+
+
+
+#logobg {
+  background-color: rgba(255,255,255 , 0.8);;
+  height: 48px;
+width: 100%;
+  position: absolute;
+}
+
+
+#subtitle {
+  z-index:2000;
+  font-family: helvetica;
+  position: absolute;
+  top:50px;
+  left:0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+  
+}
+
+
+#moreInfoButton {
+  right: 0px;
+  top: 0px;
+  position: absolute;
+}
+
+#shopButton {
+  right: 50px;
+  top: 0px;
+  position: absolute; 
+}
+
+/*styling of the text*/ 
+
+#moreinfo a {
+  color: black;
+}
+
+#moreinfo>h1 {
+  margin-top: 0.0em;
+  margin-bottom: 0.67em;
+}
+
+
+#moreinfo>ul {
+  margin-top: 0px;
+  margin-bottom: 1em;
+  padding-left: 30px;
+}
+
+
+#moreinfo>ul>li>a {
+  color: black;
+}
+
+
+#moreinfo>ul>#backtolist {
+  padding-top: 1em;
+  color: black;
+}
+
+
+.padleft {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about {
+  margin-top: 40px;
+  margin-bottom: 0.2em;
+  /*background-color: white;*/
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-weight:bold; 
+ 
+}
+
+/*the butttons`*/
+
+#moreInfoButton {
+        /*background-color: rgba(0, 0, 0, 0);*/
+       /* background-color:transparent;*/
+        /*position: absolute;*/
+        z-index: 1000;
+        right: 0px;
+        top:0px;
+        margin: 4px;
+    }
+#shopButton {
+  /*position: absolute;*/
+  z-index: 1001;
+  right: 44px;
+  top:0px;
+  margin: 4px ;
+}
+
+
+#moreInfoButton>img, #closeBtn>img , #shopButton>a>img , #shopButton2>a>img {
+    width: 40px;
+    cursor: pointer;
+}
+
+
+#moreInfoButton:hover>img, #closeBtn:hover>img , #shopButton:hover>a>img , #shopButton2:hover>a>img {
+    opacity: 0.8;
+
+}
+
+
+#closeBtn {
+  position: absolute;
+  width: 40px;
+  right: 0px;
+  top:0px;
+  margin: 4px;
+}
+
+/*end of*/
+
+
+#moreinfo {
+   background-color: rgba(255,255,255 , 0.8);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+  max-width: 480px;
+  font-family: helvetica;
+  /*visibility: hidden;*/
+}
+</style>
+
+
+
+<script type="text/javascript">
+if(!inIframe()){
+ 
+  document.write('<div id="moreInfoButton"><img src="/images/more_info.png" onclick="showInfo();"/></div>');
+  
+  document.write('<div id="shopButton"><a href="http://shop.farfotsel.com"><img src="/images/shop_btn.png" /></a></div>');
+  //console.log(moreInfoButton);
+
+   moreinfo_pane.style.overflow = 'scroll';
+}
+</script>
+
+
+<div id="moreinfo">
+  <br><br><br>
+  <div id="closeBtn"><img src="/images/close_btn.png" onclick="hideInfo();"/></div>
+ 
+  <div class="about">about:</div>
+  <div class="padleft">This is an art collaboration between <a href="http://www.rinskedekker.nl">Rinske Dekker</a> and <a href="http://barcinski.nl">Mark Barcinski</a>. We joined our forces to create this website, our personal playground where we experiment and make beautiful stuff for fun. We combine paint and pencil and creative coding to tell the story of farfotsels.<br/><br/>
+
+  Farfotsels come from the spirit world. They are a curious bunch who like to travel through all worlds and dimensions. In our world, when they want to be seen, they appear as tiny specks of dust. Althoug most of us still fail to notice them. 
+
+  <!--That's because they are attrcted (or are the cause of, this question has puzzeld the gratest scientist and phillosofers for centuries) static electricity.-->
+
+  </div>
+  <div class="about">quick nav:</div>
+
+    <ul>
+    <li><a href="/colorscroll/" style='color:black;text-decoration:none;font-weight:bold;display:block;margin-top:2px'>compulsive color scroll</a></li>
+    <li><a href="/throughtriangles/" >travelling through triangles</a></li>
+    <li><a href="/bouncingmimos/" >bouncing mimios</a></li>
+    <li><a href="/manyeyes/" >many eyes</a></li>
+    <li><a href="/dreamydenise/" >dreamy denise</a></li>
+    <li><a href="/boysandbunnies/" >boys and bunnies</a></li>
+    <li><a href="/dreamy/" >dreamy</a></li>
+
+    <li id="backtolist"><a href="/list">back to list</a></li>    
+  </ul>
+
+  <div class="about">follow us:</div><br/>
+  <div class="padleft" style="margin-bottom:27px;">
+    <a href="https://www.facebook.com/farfotsel/"><img src="/images/icons/facebook.png" width="32" height="32" /></a>
+    <a href="https://urlgeni.us/instagram/GwEf"><img src="/images/icons/instagram.png" width="32" height="32" /></a>
+    <a href="http://farfotsel.tumblr.com/"><img src="/images/icons/tumblr.png" width="32" height="32" /></a>
+  </div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+function showInfo() {
+ moreinfo.style.display = 'block';
+ //  moreinfo.style.visibility = 'visible';
+  // moreInfoButton.style.visibility = 'hidden';
+   moreInfoButton.style.display = 'none';
+  // shopButton.style.display = 'none';
+ 
+  
+}
+
+function hideInfo() {
+ // moreinfo.style.visibility = 'hidden';
+  // moreInfoButton.style.visibility = 'visible';
+  moreinfo.style.display = 'none';
+   moreInfoButton.style.display = 'block';
+  // shopButton.style.display = 'block';
+  
+}
+
+</script>
+
+
+<div id="div0"></div>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+<div id="div4"></div>
+
+
+<script type="text/javascript">
+
+var minScroll , maxScroll;
+
+var color1 = "pink";
+var color2 = "yellow";
+
+function setupviewport(){
+	//document.body.style.height = (window.innerHeight * 6) + "px";
+	minScroll = div1.offsetTop;
+	maxScroll = div3.offsetTop;
+
+	
+	//recolor();
+	//window.scrollTo(0, minScroll);
+}
+
+function recolorUp(){
+	console.log("recolorup", window.getComputedStyle(div3).backgroundColor)
+
+	div0.style.backgroundColor = window.getComputedStyle(div2).backgroundColor;
+	div1.style.backgroundColor = window.getComputedStyle(div3).backgroundColor;
+	div2.style.backgroundColor = window.getComputedStyle(div4).backgroundColor;
+	div3.style.backgroundColor = getRnnCss();
+	div4.style.backgroundColor = getRnnCss();
+
+	//div3.style.background = getRnnStripes();
+	
+}
+
+function recolorDown(){
+	//div1.style.backgroundColor = window.getComputedStyle(div3).backgroundColor;
+	div4.style.backgroundColor = window.getComputedStyle(div2).backgroundColor;
+	div3.style.backgroundColor = window.getComputedStyle(div1).backgroundColor;
+	div2.style.backgroundColor = window.getComputedStyle(div0).backgroundColor;
+	div1.style.backgroundColor = getRnnCss();
+	div0.style.backgroundColor = getRnnCss();
+	
+}
+
+function getRnnStripes() {
+	return "repeating-linear-gradient(yellow,yellow 10px,pink 10px,pink 20px)";
+}
+
+function getRnnCss(){
+	return "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256 ) + ")";
+	
+	//return "#" + Math.floor(Math.random() * 0xffffff).toString(16);
+}
+
+
+function checkForScroll() {
+	var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	
+	if(bodyScrollTop > maxScroll){
+		window.scrollTo(0, minScroll);
+		recolorUp();
+	}
+	if(bodyScrollTop < minScroll){
+		window.scrollTo(0, maxScroll);
+		recolorDown();
+	}
+	//console.log (bodyScrollTop);
+	requestAnimationFrame(checkForScroll);
+
+
+}
+
+setupviewport();
+checkForScroll();
+window.onresize = setupviewport;
+
+
+</script>
+</body>
