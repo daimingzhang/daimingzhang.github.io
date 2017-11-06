@@ -13,8 +13,6 @@
     height: 110%;
     width: 120%;
     position: absolute;
-    overflow-x: hidden;
-    overflow-y: hidden;
     overflow:hidden;
     margin-left:-5%;
     margin-top:-1.6%;
@@ -33,10 +31,14 @@
   	animation: across 100s infinite;
   	animation-direction:alternate;
   	cursor: url(”https://png.icons8.com/mouse-scrolling/ios7/50/000000“), auto;
+  	transform: perspective(17px);
+
   }
-.frame:hover{
-}
   iframe{
+  	height: 18%;
+    width: 18%;
+    transform: translate3d(12px, 50%, 3em);
+    transform: perspective(17px);
   	    overflow:hidden;
   }
   iframe::-webkit-scrollbar {
