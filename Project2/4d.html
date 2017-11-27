@@ -10,12 +10,7 @@
 
 
   .container{
-    height: 110%;
-    width: 120%;
-    position: absolute;
-    overflow:hidden;
-    margin-left:-5%;
-    margin-top:-1.6%;
+    position: relative;
 
 }
 .container::-webkit-scrollbar {
@@ -24,21 +19,13 @@
   .frame{
     height: 80%;
     width: 120%;
+    margin-left: 10px;
     position: absolute;
-    top:10%;
-    left:0%;
   	overflow: visible;
-  	animation: across 100s infinite;
-  	animation-direction:alternate;
+transform: rotate(90deg);  	
   	cursor: url(”https://png.icons8.com/mouse-scrolling/ios7/50/000000“), auto;
-  	transform: perspective(17px);
-
   }
   iframe{
-  	height: 18%;
-    width: 18%;
-    transform: translate3d(12px, 50%, 3em);
-    transform: perspective(17px);
   	    overflow:hidden;
   }
   iframe::-webkit-scrollbar {
@@ -50,15 +37,15 @@
 }
 
    body{
-   	width: 5%;
-   	height:5%;
+   	width: 10%;
+   	height:10%;
    	position: absolute;
    	  overflow-y:hidden;
     overflow-x: hidden;
     
 
      }
-
+/*
 @keyframes across {
 	0%{
 		transform: rotate(0deg);
@@ -72,7 +59,7 @@
 	66.6%{
 		transform: rotate(-90deg);
 	}
-	}
+	}/*
   </style>
 </head>
 
