@@ -56,8 +56,6 @@ body{
 }
 
 .left{
-  background-image: url('frame.png');
-  background-repeat: no-repeat;
   margin-top:0px; 
   float: left;
   position: relative;
@@ -67,21 +65,21 @@ body{
   overflow-x:hidden; 
 }
 .frame{
-     position: relative;
+     position: absolute;
     width: 108%;
     height: 103.2%;
     margin-left: 7.4%;
     margin-top: 7%;
+    z-index: 3;
 
+
+}
+.frame0{
+  position:absolute;
+  z-index:2
 }
 iframe{
   overflow-x: hidden;
-}
-.iframe{
-  overflow-x:hidden;
-}
-#defaultCanvas0{
-  overflow: hidden;
 }
 
 .right{
@@ -96,7 +94,22 @@ iframe{
 
 
   </style>
+
 </head>
+
+
+
+  <script type="text/javascript">
+    
+function mouseClicked() {
+
+  console.log('click');
+  saveCanvas('my_image', 'jpg');
+
+}
+
+    
+  </script>
 
 <body>
 
@@ -104,15 +117,22 @@ iframe{
         <div class="container">
 
            <div class="left">
-           <div class="frame">
 
-          <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="70%" height="58%" overflow="hidden"></iframe>
+                       <a class="frame0"><img src="frame.png"></a>
+
+                            <div class="frame">
+
+                                <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="70%" height="58%" overflow="hidden"></iframe>
+
+                           </div>
+
+                      
 
           </div>
 
-          </div>
 
-      
+
+
 
         <div class="right">
 

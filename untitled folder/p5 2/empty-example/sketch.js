@@ -4,6 +4,13 @@ var brushY;
 var brushes ;
 
 
+function mouseClicked() {
+
+  console.log('click');
+  saveCanvas('my_image', 'jpg');
+
+}
+
 function setup() {
   mic = new p5.AudioIn();
   mic.start();
