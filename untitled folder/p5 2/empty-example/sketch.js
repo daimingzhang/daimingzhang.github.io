@@ -9,7 +9,7 @@ function setup() {
   mic.start();
   createCanvas(windowWidth, windowHeight);
   brushes = [];
-  background(255, 255, 255);
+  background(255, 255, 254);
   
   for(var i = 0; i < 1; i++){
     var b = new Brush(random(-30,0), random(height));
