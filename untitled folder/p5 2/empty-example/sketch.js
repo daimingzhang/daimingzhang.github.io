@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-   micLevel = mic.getLevel()*0.0999999;
+   micLevel = mic.getLevel()*0.3;
   text(micLevel, 50, 50);
   for(var j = 0; j < brushes.length; j++){
     brushes[j].updateLocation(micLevel)
@@ -32,7 +32,7 @@ function draw() {
 function Brush(startX,startY){
   this.x = startX
   this.y = startY
-  this.minSize = random(1,2);
+  this.minSize = random(1,20);
   this.maxSize = random(5,500);
   this.size = this.minSize
   this.levelMultiplier = random(20,80)
