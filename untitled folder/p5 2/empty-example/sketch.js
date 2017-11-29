@@ -9,7 +9,7 @@ function setup() {
   mic.start();
   createCanvas(windowWidth, windowHeight);
   brushes = [];
-  background(255, 255, 254);
+  background(255, 255, 255);
   
   for(var i = 0; i < 1; i++){
     var b = new Brush(random(-30,0), random(height));
@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-   micLevel = mic.getLevel()*1;
+   micLevel = mic.getLevel()*0.09;
   text(micLevel, 50, 50);
   for(var j = 0; j < brushes.length; j++){
     brushes[j].updateLocation(micLevel)
