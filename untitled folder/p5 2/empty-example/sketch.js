@@ -18,7 +18,7 @@ function setup() {
   brushes = [];
   background(255, 255, 255);
   
-  for(var i = 0; i < 1; i++){
+  for(var i = 0.05; i < 1; i++){
     var b = new Brush(random(-30,0), random(height));
     brushes.push(b)
   }
