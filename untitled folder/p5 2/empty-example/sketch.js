@@ -20,7 +20,7 @@ function setup() {
 }
 
 function draw() {
-   micLevel = mic.getLevel()*0.09;
+   micLevel = mic.getLevel()*0.0999999;
   text(micLevel, 50, 50);
   for(var j = 0; j < brushes.length; j++){
     brushes[j].updateLocation(micLevel)
