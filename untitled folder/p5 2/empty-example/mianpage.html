@@ -13,7 +13,7 @@
   text-align: center;
   float: left;
   position: relative;
-  background-color: #fafafa;
+  background-color: white;
   float: left;
   width: 285px;
   height: 285px;
@@ -23,7 +23,7 @@
   text-align: center;
   float: left;
   position: relative;
-  background-color: #fafafa;
+  background-color: white;
   width: 285px;
   height: 285px;
   
@@ -31,7 +31,7 @@
 .box3{
  float: left;
   position: relative;
-  background-color: brown;
+  background-color: white;
   width: 285px;
   height: 285px;
   
@@ -39,7 +39,7 @@
 .box4{
  float: left;
   position: relative;
-  background-color: purple;
+  background-color: white;
   width: 285px;
   height: 285px;
   
@@ -56,6 +56,8 @@ body{
 }
 
 .left{
+  background-image: url('frame.png');
+  background-repeat: no-repeat;
   margin-top:0px; 
   float: left;
   position: relative;
@@ -63,6 +65,20 @@ body{
   height: 100%;
   overflow-y: hidden;
   overflow-x:hidden; 
+}
+.frame{
+     position: relative;
+    width: 108%;
+    height: 103.2%;
+    margin-left: 7.4%;
+    margin-top: 7%;
+
+}
+iframe{
+  overflow: hidden;
+}
+.iframe{
+  overflow:hidden;
 }
 
 .right{
@@ -85,8 +101,11 @@ body{
         <div class="container">
 
            <div class="left">
+           <div class="frame">
 
-          <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="100%" height="100%" overflow="hidden"></iframe>
+          <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="70%" height="58%" overflow="hidden"></iframe>
+
+          </div>
 
           </div>
 
@@ -94,11 +113,9 @@ body{
 
         <div class="right">
 
-         <div class="box1"> Morning Forest  <audio controls> <source src="bird.mp3" type="audio/mpeg"> </audio>
-           <img src="morning.jpg">
+         <div class="box1"> 
          </div>
-          <div class="box2"> Library <audio controls> <source src="library.mp3" type="audio/mpeg"> </audio>
-           <img src="library.jpg">
+          <div class="box2"> 
 
           </div>
            <div class="box3"></div>
