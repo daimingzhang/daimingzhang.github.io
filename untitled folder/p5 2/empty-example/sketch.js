@@ -39,8 +39,8 @@ function draw() {
 function Brush(startX,startY){
   this.x = startX
   this.y = startY
-  this.minSize = random(1,20);
-  this.maxSize = random(5,500);
+  this.minSize = random(0.01,20);
+  this.maxSize = random(1,10);
   this.size = this.minSize
   this.levelMultiplier = random(20,80)
   this.color = color(random(100),0, 0);
