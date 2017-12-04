@@ -18,7 +18,7 @@ function setup() {
   brushes = [];
   background(255, 255, 255);
   
-  for(var i = 0.3; i < 1; i++){
+  for(var i = 0; i < 1; i++){
     var b = new Brush(random(0,0), random(height));
     brushes.push(b)
   }
@@ -39,9 +39,9 @@ function draw() {
 function Brush(startX,startY){
   this.x = startX
   this.y = startY
-  this.minSize = (0,100);
-  this.maxSize = (0,0);
-  this.levelMultiplier = random(20,80)
+  this.minSize = (0,20);
+  this.maxSize = (0,100);
+  this.levelMultiplier = random(2,6)
   this.color = color(random(255), random(255), random(255));
   this.speed = (0.1,0.3)
   this.show = function(){
@@ -54,10 +54,10 @@ function Brush(startX,startY){
     this.x += m * this.levelMultiplier;
     this.size = map(m, 0.01, 0.5, this.minSize, this.maxSize);
     
-    if (this.x > width){
-        this.x = -20
-        this.color = color(random(255), random(255), random(255));
-        this.y = random(height);
+    if (this.y > height){
+        this.y = 0
+        this.color = color((255), (255), (255));
+        this.y = random(width);
       }
     
   }
