@@ -45,7 +45,7 @@ function Brush(startX,startY){
   this.color = color(random(255), random(255), random(255));
   this.speed = (0.1,0.3)
   this.show = function(){
-    stroke(this.color)
+    fill(this.color)
 
     ellipse(this.x, this.y, this.size, this.size)
   }
