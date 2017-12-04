@@ -1,0 +1,127 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>
+   Context Drawing
+  </title>
+  <style>
+
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.container{
+  position: absolute;
+  height: 100%;
+  width: 99%;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.left{
+  margin-top:0px; 
+  margin-left: 0px;
+  float: left;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x:hidden; 
+}
+.frame{
+     position: absolute;
+    width: 108%;
+    height: 103.2%;
+    margin-left: 7%;
+    margin-top: 7%;
+    z-index: 3;
+
+
+}
+.frame0{
+  position:absolute;
+  z-index:1
+}
+iframe{
+  overflow-x: hidden;
+}
+
+.right{
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.five{
+  background-image: url('frame1.jpg');
+  background-repeat: no-repeat;
+}
+
+
+
+  </style>
+
+</head>
+
+
+
+  <script type="text/javascript">
+    
+function mouseClicked() {
+
+  console.log('click');
+  saveCanvas('my_image', 'jpg');
+
+}
+
+
+    
+  </script>
+
+<body>
+
+
+        <div class="container">
+
+           <div class="left">
+
+                       <a class="frame0"><img src="frame1.jpg" class="five"></a>
+
+                            <div class="frame">
+
+                                <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="70%" height="58%" overflow="hidden"></iframe>
+
+                           </div>
+
+                      
+
+          </div>
+
+
+
+
+
+        <div class="right">
+
+         
+
+          </div>
+
+
+         
+
+
+
+
+   
+         
+          </div>
+
+
+</body>
+</html>
+

@@ -2,58 +2,22 @@
 
 <html lang="en">
 <head>
-
+<link rel="stylesheet" href="https://use.typekit.net/myl5rdy.css">
   <title>
    Context Drawing
   </title>
   <style>
 
 
-.box1{
-  text-align: center;
-  float: left;
-  position: relative;
-  background-color: white;
-  float: left;
-  width: 285px;
-  height: 285px;
-  
-}
-.box2{
-  text-align: center;
-  float: left;
-  position: relative;
-  background-color: white;
-  width: 285px;
-  height: 285px;
-  
-}
-.box3{
- float: left;
-  position: relative;
-  background-color: white;
-  width: 285px;
-  height: 285px;
-  
-}
-.box4{
- float: left;
-  position: relative;
-  background-color: white;
-  width: 285px;
-  height: 285px;
-  
-}
 body{
   overflow-y: hidden;
   overflow-x: hidden;
+  background-image: url(one.jpg);
 }
 .container{
-  position: absolute;
+  position: fixed;
   height: 100%;
-  width: 99%;
-  overflow: hidden;
-  margin-top: 0px;
+  width: 100%;
 }
 
 .left{
@@ -68,20 +32,21 @@ body{
 }
 .frame{
      position: absolute;
-    width: 108%;
-    height: 103.2%;
-    margin-left: 7%;
-    margin-top: 7%;
+    width: 106%;
+    height: 102%;
+    margin-left: 7.6%;
+    margin-top: 5.2%;
     z-index: 3;
-
 
 }
 .frame0{
   position:absolute;
+  margin-top: -2%;
   z-index:1
 }
 iframe{
   overflow-x: hidden;
+
 }
 
 .right{
@@ -91,6 +56,18 @@ iframe{
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+.lable{
+  position: absolute;
+  background-image:url('paper.jpg');
+  font-family: Europa;
+
+  width: 200px;
+  height: 130px;
+  margin-top: 50%;
+  margin-left: 35%;
+  align-content: center;
+  text-align: center;
 }
 
 
@@ -124,6 +101,13 @@ function mouseClicked() {
                             <div class="frame">
 
                                 <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="70%" height="58%" overflow="hidden"></iframe>
+
+                           </div>
+
+                           <div class="lable"><br><br>
+                             Name: Context Drawing<br>
+                             <br>
+                             Time: ___ / ___ / ___
 
                            </div>
 
