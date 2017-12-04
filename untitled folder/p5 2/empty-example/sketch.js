@@ -41,11 +41,12 @@ function Brush(startX,startY){
   this.y = startY
   this.minSize = (0,20);
   this.maxSize = (0,100);
-  this.levelMultiplier = random(2,6)
+  this.levelMultiplier = random(100)
   this.color = color(random(255), random(255), random(255));
   this.speed = (0.1,0.3)
   this.show = function(){
-    stroke(this.speed)
+    stroke(this.color)
+
     ellipse(this.x, this.y, this.size, this.size)
   }
   
