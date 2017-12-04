@@ -54,10 +54,10 @@ function Brush(startX,startY){
     this.x += m * this.levelMultiplier;
     this.size = map(m, 0.01, 0.5, this.minSize, this.maxSize);
     
-    if (this.y > height){
-        this.y = 0
-        this.color = color((255), (255), (255));
-        this.y = random(width);
+    if (this.x > width){
+        this.x = -20
+        this.color = color(random(255), random(255), random(255));
+        this.y = random(height);
       }
     
   }
