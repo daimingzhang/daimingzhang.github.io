@@ -15,7 +15,7 @@ function mouseClicked() {
 function setup() {
   mic = new p5.AudioIn();
   mic.start();
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(890, 480);
   brushes = [];
   background(255, 255, 255);
   
