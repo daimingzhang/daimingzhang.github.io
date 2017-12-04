@@ -18,7 +18,7 @@ function setup() {
   brushes = [];
   background(255, 255, 255);
   
-  for(var i = 0.03; i < 1; i++){
+  for(var i = 0.3; i < 1; i++){
     var b = new Brush(random(0,0), random(height));
     brushes.push(b)
   }
@@ -39,15 +39,13 @@ function draw() {
 function Brush(startX,startY){
   this.x = startX
   this.y = startY
-  this.minSize = random(10,11);
-  this.maxSize = random(0,0);
-  this.size = this.Size
+  this.minSize = (0,100);
+  this.maxSize = (0,0);
   this.levelMultiplier = random(20,80)
   this.color = color(random(255), random(255), random(255));
-  this.speed = (0.01,0.03)
+  this.speed = (0.1,0.3)
   this.show = function(){
     fill(this.color)
-    noStroke()
     ellipse(this.x, this.y, this.size, this.size)
   }
   
