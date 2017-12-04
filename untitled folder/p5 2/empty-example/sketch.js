@@ -18,8 +18,8 @@ function setup() {
   brushes = [];
   background(255, 255, 255);
   
-  for(var i = 0.05; i < 1; i++){
-    var b = new Brush(random(-30,0), random(height));
+  for(var i = 0.03; i < 1; i++){
+    var b = new Brush(random(0,0), random(height));
     brushes.push(b)
   }
   
@@ -27,7 +27,7 @@ function setup() {
 }
 
 function draw() {
-   micLevel = mic.getLevel()*0.3;
+   micLevel = mic.getLevel()*1;
   text(micLevel, 50, 50);
   for(var j = 0; j < brushes.length; j++){
     brushes[j].updateLocation(micLevel)
@@ -39,11 +39,11 @@ function draw() {
 function Brush(startX,startY){
   this.x = startX
   this.y = startY
-  this.minSize = random(0.01,20);
-  this.maxSize = random(1,10);
-  this.size = this.minSize
+  this.minSize = random(10,11);
+  this.maxSize = random(0,0);
+  this.size = this.Size
   this.levelMultiplier = random(20,80)
-  this.color = color(random(100),0, 0);
+  this.color = color(random(255), random(255), random(255));
   this.speed = (0.01,0.03)
   this.show = function(){
     fill(this.color)
