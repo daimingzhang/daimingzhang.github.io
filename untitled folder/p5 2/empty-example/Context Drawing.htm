@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)file:///Users/daimingzhang/Desktop/daimingzhang.github.io/untitled%20folder/p5%202/empty-example/mianpage.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><link rel="stylesheet" href="./Context Drawing_files/vdf3pnb.css">
+  <title>
+   Context Drawing
+  </title>
+  <style>
+
+
+body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url(wu.jpg);
+
+  background-size:contain;
+}
+.container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.left{
+  float: left;
+  position: relative;
+  width: 80%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x:hidden; 
+}
+.frame{
+     position: absolute;
+    width: 83.5%;
+    height: 72.9%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index:4;
+    margin-top: -51.7%;
+    margin-left: 8.4%;
+
+}
+.img{
+	position:relative;
+	z-index:3;
+}
+.frame0{
+  position:relative;
+   width: 100%;
+    height: 100%;
+
+}
+iframe{
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+.right{
+  float: left;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.lable{
+  position: absolute;
+  font-size: 17px;
+  background-image:url('lian.jpg');
+  background-size: cover;
+  font-family: share-regular;
+  font-style: normal;
+  font-weight: 700;
+  color:black;
+  width: 210px;
+  height: 130px;
+  margin-top: 179%;
+  margin-left: 0%;
+  text-align: center;
+   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+   z-index: 1;
+
+}
+
+.instruction{
+  left: 270px;
+  top: 50px;
+  background-color:grey;
+  width: 245px;
+  height: 450px;
+  position: absolute;
+   -webkit-transition: all 0.7s ease-in;
+       -moz-transition: all 0.7s ease-in;
+        -ms-transition: all 0.7s ease-in;
+         -o-transition: all 0.7s ease-in;
+            transition: all 0.7s ease-in;
+            z-index: 2;
+}
+.instruction:hover {
+  -webkit-transform: translate(-305px, 0px);
+       -moz-transform: translate(-305px, 0px);
+        -ms-transform: translate(-305px, 0px);
+         -o-transform: translate(-305px, 0px);
+            transform: translate(-305px, 0px);
+
+}
+
+.center{
+	margin-top: 15%;
+}
+
+  </style>
+
+<script type="text/javascript">
+    
+function mouseClicked() {
+
+  console.log('click');
+  saveCanvas('my_image', 'jpg');
+
+}
+
+    
+  </script></head>
+
+
+
+  
+
+<body>
+
+
+        <div class="container">
+
+           <div class="left">
+
+                       <div class="frame0">
+
+
+                          
+                           <div class="img"> <img src="./Context Drawing_files/frame.png" width="100%" height="100%">
+                            <div class="frame">
+
+                                <iframe frameborder="0" src="./Context Drawing_files/index.html" width="100%" height="100%"></iframe>
+                               
+                           </div>
+
+                           </div>
+
+                       </div>
+
+                           
+
+                         
+
+                      
+
+          </div>
+
+
+
+
+
+        <div class="right">
+
+        <div class="instruction"></div>
+
+           <div class="lable">
+           					<div class="center">
+                           <form action="file:///action_page.php">
+                           <label for="fname">Context</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Where are you?">
+                          <br>
+                          <br>
+                           
+                           &nbsp; &nbsp;<label for="fname">Time</label> 
+                          <input type="text" id="fname" name="firstname" placeholder="What is time now?">
+                          	</form></div>
+                           </div>
+
+          </div>
+
+
+         
+
+
+
+
+   
+         
+          </div>
+
+
+
+
+
+</body></html>
