@@ -22,7 +22,7 @@ body{
 
 .left{
   float: left;
-  position: absolute;
+  position: relative;
   width: 80%;
   height: 100%;
   overflow-y: hidden;
@@ -30,26 +30,33 @@ body{
 }
 .frame{
      position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: ;
-    margin-top: 8.9%;
+    width: 88%;
+    height: 78%;
+    overflow-y: hidden;
+    z-index:3;
+    margin-top: 8%;
     margin-left: 8.4%;
 
+}
+.img{
+	position:relative;
+	z-index:4;
 }
 .frame0{
   position:relative;
    width: 100%;
     height: 100%;
+
 }
 iframe{
   overflow-x: hidden;
+  overflow-y: hidden;
 
 }
 
 .right{
   float: left;
-  position: absolute;
+  position: relative;
   width: 20%;
   height: 100%;
   overflow-x: hidden;
@@ -59,12 +66,37 @@ iframe{
   position: absolute;
   background-image:url('paper.jpg');
   font-family: Europa;
-
-  width: 200px;
+  width: 210px;
   height: 130px;
-  margin-top: 50%;
-  margin-left: 35%;
+  margin-top: 105%;
+  margin-left: 10%;
   text-align: center;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+   z-index: 1;
+
+}
+
+.instruction{
+  left: 250px;
+  top: 50px;
+  background-color:grey;
+  width: 2500px;
+  height: 600px;
+  position: absolute;
+   -webkit-transition: all 0.7s ease-in;
+       -moz-transition: all 0.7s ease-in;
+        -ms-transition: all 0.7s ease-in;
+         -o-transition: all 0.7s ease-in;
+            transition: all 0.7s ease-in;
+            z-index: 2;
+}
+.instruction:hover {
+  -webkit-transform: translate(-305px, 0px);
+       -moz-transform: translate(-305px, 0px);
+        -ms-transform: translate(-305px, 0px);
+         -o-transform: translate(-305px, 0px);
+            transform: translate(-305px, 0px);
+
 }
 
 
@@ -98,21 +130,16 @@ function mouseClicked() {
 
                            <div class="frame">
 
-                                <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="83.5%" height="73.4%" overflow="hidden"></iframe>
+                                <iframe frameborder="0" src="https://daimingzhang.github.io/untitled%20folder/p5%202/empty-example/index.html" width="100%" height="100%" overflow="hidden"></iframe>
                                
                            </div>
-                            <img src="frame.png" width="100%" height="100%">
+                           <div class="img"> <img src="frame.png" width="100%" height="100%"></div>
 
                        </div>
 
                            
 
-                           <div class="lable"><br><br>
-                             Name: Context Drawing<br>
-                             <br>
-                             Time: ___ / ___ / ___
-
-                           </div>
+                         
 
                       
 
@@ -124,7 +151,21 @@ function mouseClicked() {
 
         <div class="right">
 
-         
+        <div class="instruction"></div>
+
+           <div class="lable">
+           <br>
+
+                           <form action="/action_page.php">
+                           <label for="fname">Context</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Where are you?">
+                          <br>
+                          <br>
+                           <form action="/action_page.php">
+                           <label for="fname">Time</label> &nbsp; &nbsp;
+                          <input type="text" id="fname" name="firstname" placeholder="What is time now?">
+
+                           </div>
 
           </div>
 
