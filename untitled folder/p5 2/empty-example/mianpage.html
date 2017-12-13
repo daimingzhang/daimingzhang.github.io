@@ -4,6 +4,9 @@
 <head>
 <link rel="stylesheet" href="https://use.typekit.net/vdf3pnb.css">
 <link rel="stylesheet" href="https://use.typekit.net/fqe0caq.css">
+<link rel="stylesheet" href="https://use.typekit.net/gef8pck.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
@@ -36,7 +39,7 @@ body{
 .frame{
      position: absolute;
     width: 83.5%;
-    height: 72.9%;
+    height: 72.7%;
     overflow-x: hidden;
     overflow-y: hidden;
     z-index:4;
@@ -68,26 +71,35 @@ iframe{
   overflow-x: hidden;
   overflow-y: hidden;
 }
-@media only screen and (max-width: 1400px) and (max-height: 750px){.lable{
-  position: relative;
+.right2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+@media only screen and (max-width: 1440px) and (max-height: 750px){.lable{
+  position: absolute;
   font-size: 1vw;
   background-image: url(paper.jpg);
   background-size: cover;
-  font-family: "futura-pt";
+  font-family: "mr-eaves-modern";
 	font-weight: 700;
 	font-style: normal;
 	overflow: hidden;
   color:black;
-  transform: scale(0.9);
-  margin-top: 150%;
- left: -10%;
+  width: 70%;
+  transform: scale(0.8);
+  margin-top: 170%;
+ margin-left: -5%;
   text-align: center;
    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
    z-index: 3;
    overflow-y: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  float: left;
+
 
 }}
 
@@ -100,7 +112,25 @@ iframe{
 	margin-right: 10%;
 	overflow: hidden;
 }
-
+.one{
+ padding-top: 2%;
+}
+.two{
+ padding-top: 5%;
+}
+.three{
+ padding-top: 5%;
+}
+.four{
+ padding-top: 5%;
+}
+.five{
+ padding-top: 5%;
+}
+.six{
+ padding-top: 5%;
+ padding-bottom: 10%;
+}
 
 
 
@@ -110,61 +140,53 @@ iframe{
 
 
 .instruction{
-  right:-10%;
-  top: 5%;
+  float: left;
+  margin-left:1%;
+  margin-top: 12%;
   background-color:#ffea03;
-  width: 16%;
-  height: 50%;
+  width: 88%;
+  height: 62%;
   position: absolute;
-   -webkit-transition: all 0.7s ease-in;
-       -moz-transition: all 0.7s ease-in;
-        -ms-transition: all 0.7s ease-in;
-         -o-transition: all 0.7s ease-in;
-            transition: all 0.7s ease-in;
-            z-index: 2;
+  z-index: 1;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: none;
 
-   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.instruction:hover {
-  -webkit-transform: translate(-120%, 0%);
 }
 
-.insin{
-	position: absolute;
-	width: 100%;
-	height: 20%;
+.img2{
+  transform: scale(0.2);
+  float: left;
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 6%;
+  z-index: 5;
+  cursor: pointer;
+  opacity: 1;
+}
+.img2:hover {
+  opacity: 0.8;
 }
 
-#circle {
-	float: left;
-	position: absolute;
-	margin-left: -10%;
-	width: 10%;
-	height: 10%;
-	background:#212020;
-	-moz-border-radius: 5%;
-	-webkit-border-radius: 5%;
-	border-radius: 5%;
-}
 .text{
 	font-family: "futura-pt";
 	font-weight: 300;
 	font-style: normal;
-	font-size: 0.8vw;
+	font-size: 0.9vw;
 	float: left;
-	margin-left: 10%;
+	margin-left: 11%;
 	margin-top: 5%;
 }
 .title{
-	margin-top: 15%;
+	margin-top: 10%;
 	float: left;
-	margin-left: 26%;
-margin-top: 3%;
-	font-size: 1.5vw;
+	margin-left: 11%;
+	font-size: 1.3vw;
   background-size: cover;
- font-family: "futura-pt";
-	font-weight: 700;
-	font-style: normal;
+  font-family: "futura-pt";
+  font-weight: 700;
+  font-style: normal;
   color:black;
    display: flex;
   justify-content: center;
@@ -172,12 +194,72 @@ margin-top: 3%;
 }
 
 .bottom{
-	position: absolute;
+	position: fixed;
 	transform: scale(0.07);
-	left: -10%;
+	margin-left: -10%;
 }
+.bold{
 
+  margin-left: 11%;
+  margin-top: 4%;
+float: left;
+  font-size: 0.75vw;
+   font-family: "futura-pt";
+  font-weight: 700;
+  font-style: normal;
+
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step{
+  font-family: "futura-pt";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9vw;
+  float: left;
+  margin-left: 11%;
+  margin-top: 2%;
+  line-height:137%;
+}
+.step2{
+  font-family: "futura-pt";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9vw;
+  float: left;
+  margin-left: 11%;
+  margin-top: 2%;
+  line-height:137%;
+}
+.step3{
+  font-family: "futura-pt";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.75vw;
+  float: left;
+  line-height:137%;
+  color:black;
+
+
+}
+.step3:hover {
+  text-decoration: underline;
+  color: blue;
+
+}
+.gram{
+  color:brown;
+   font-family: "futura-pt";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9vw;
+  float: left;
+  margin-left: 11%;
+  line-height:137%;
+}
   </style>
+
 
 </head>
 
@@ -192,8 +274,16 @@ function mouseClicked() {
 
 }
 
+
     
   </script>
+  <script>
+$(document).ready(function(){
+    $(".img2").click(function(){
+        $(".instruction").fadeToggle(1000);
+    });
+});
+</script>
 
 <body>
 
@@ -231,63 +321,76 @@ function mouseClicked() {
 
 
         <div class="right">
-
-        <div class="instruction">
-        <div class="insin">
-
-        <a class="title">Instruction</a>
-
-        <a class="text">Context drawing is a tool for people document the different enviroemnt</a>
-
-        <div class="bottom"><img src="instagram.png"></div>
+        <div class="img2"><img src="pin4.png"></div>
+        <div class="right2">
 
 
+                                        
+
+                                <div class="instruction">
+
+                                       <a class="title">CONTEXT DRAWING</a>
+
+                                       <a class="text">Context drawing is a tool for people recording different sounds in different situation and location. You can see <br>different visual painting based on <br>the place you choose.</a>
+                                       <br>
+                                       <a class="bold">HOW TO USE THIS TOOL?</a>
+                                       <a class="step">
+                                            1.You need to choose a location which <br>&nbsp;&nbsp;&nbsp;&nbsp;you want to record the sounds.<br>
+                                            2.Allow daimingzhang.github.io use <br> &nbsp;&nbsp;&nbsp;&nbsp;your microphone.<br>
+                                            3.Enjoy the visual drawing and <br>&nbsp;&nbsp;&nbsp;&nbsp;context sounds&nbsp;!!!<br>
+                                            4.When you drawing is done, just right &nbsp;&nbsp;&nbsp;&nbsp;click canvas for download the painting.<br>
+                                            5.Fill the white painting label below.
 
 
-        <div id="circle"></div>
-        	
+                                        </a>
+                                       
+                                       <a class="bold">SHARE YOUR PAINTING!</a>
+                                        <a class="step2">
+                                           
+                                            Click email. we will post your painting <br> and information on<a class="gram">Instagram:&nbsp;&nbsp;</a><a href="https://www.instagram.com/context_drawing/" class="step3"> #Context_Dawing.</a>
 
+                                        </a>
+                                         
+                                       
+                                	
 
+                            	           
+                                      
+                               </div>
 
-
-
-
-		</div>
-        </div>
 
            <div class="lable">
-                          <div class="lablein">
+
+                                          <div class="lablein">
 
 
-                          <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
-							Context
-							  <input type="text" id="test" type="text" name="Context:"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What happen?">
-							  <br>
-							  <br>
-							Location
-							 <input type="text" id="test" type="text" name="Location:"  placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where are you?">
-							 <br>
-							 <br>
-							Date
-                          <input type="text" id="test" type="text" name="Date:"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xx/xx/xxxx">
-                          <br>
-                          <br>
-                          Time
-                          <input type="text" id="test" type="text" name="Time:"  width="100%" height="100%"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;99:99~99:99">
-                          <br>
-                          <br>
-                          <input type="file" name="Your Drawing" accept="image/*">
-							<input type="submit" value="E-mail">
-							<input type="reset" value="reset">
-							</form>
-                     
-                          <br>
-                         
+                                                     <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+                          							
+                          							             <div class="one">  CONTEXT<input type="text" id="test" type="text" name="Context"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What happen?"> </div>
+                          							 
+                          							 
+                          							
+                          							            <div class="two">LOCATION<input type="text" id="test" type="text" name="Location"  placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where are you?"></div>
+                          						
+                          							
+                          							
+                                                    <div class="three">DATE<input type="text" id="test" type="text" name="Date"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XX/XX/XXXX"></div>
+                                                  
+                                                   
+                                                    
+                                                     <div class="four">TIME&nbsp;<input type="text" id="test" type="text" name="Time"  width="100%" height="100%"   placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00:00~00:00"></div>
+                                               
+                                                   
+                                                    <div class="five"><input type="file" name="Your Drawing" value="Choose drawing" accept="image/*"></div>
 
-                          	</div>
-                           </div>
 
-          </div>
+                          							             <div class="six"><input type="submit" value="E-mail"> <input type="reset" value="Reset"></div>
+                          							
+                          						          	   </form>
+                                               
+                                         </div>
+            </div>
+
 
 
          
@@ -295,9 +398,9 @@ function mouseClicked() {
 
 
 
-   
-         
           </div>
+         </div>
+</div>
 </body>
 </html>
 
